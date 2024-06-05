@@ -30,8 +30,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.anstyle-query]]
-version = "1.0.3"
-when = "2024-05-02"
+version = "1.1.0"
+when = "2024-06-04"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -303,8 +303,8 @@ user-login = "Amanieu"
 user-name = "Amanieu d'Antras"
 
 [[publisher.proc-macro2]]
-version = "1.0.84"
-when = "2024-05-25"
+version = "1.0.85"
+when = "2024-06-02"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -443,8 +443,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.toml]]
-version = "0.8.13"
-when = "2024-05-15"
+version = "0.8.14"
+when = "2024-06-03"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -457,8 +457,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.toml_edit]]
-version = "0.22.13"
-when = "2024-05-15"
+version = "0.22.14"
+when = "2024-06-03"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -569,8 +569,8 @@ user-login = "kennykerr"
 user-name = "Kenny Kerr"
 
 [[publisher.winnow]]
-version = "0.6.9"
-when = "2024-05-28"
+version = "0.6.11"
+when = "2024-06-03"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
