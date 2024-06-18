@@ -9,6 +9,11 @@ delta = "0.21.0 -> 0.22.0"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.0.99"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.gimli]]
@@ -64,6 +69,11 @@ delta = "0.7.2 -> 0.7.3"
 [[audits.miniz_oxide]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.7.4"
+
+[[audits.miniz_oxide]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.7.2 -> 0.7.3"
 
 [[audits.native-tls]]
@@ -74,12 +84,52 @@ delta = "0.2.11 -> 0.2.12"
 [[audits.object]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.36.0"
+
+[[audits.object]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.32.2 -> 0.35.0"
+
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.10"
+
+[[audits.rustls-webpki]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.102.4"
+
+[[audits.sync_wrapper]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.2"
+
+[[audits.sync_wrapper]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.0.1"
+
+[[audits.tokio-rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.26.0"
+
+[[audits.untrusted]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.9.0"
 
 [[audits.url]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "2.5.0 -> 2.5.1"
+
+[[audits.utf8parse]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.2"
 
 [[audits.writeable]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -220,6 +270,12 @@ criteria = "safe-to-deploy"
 user-id = 6743 # Ed Page (epage)
 start = "2022-11-24"
 end = "2025-06-01"
+
+[[trusted.errno]]
+criteria = "safe-to-deploy"
+user-id = 6825 # Dan Gohman (sunfishcode)
+start = "2023-08-29"
+end = "2025-06-18"
 
 [[trusted.h2]]
 criteria = "safe-to-deploy"

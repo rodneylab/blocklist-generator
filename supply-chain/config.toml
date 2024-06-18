@@ -59,17 +59,9 @@ criteria = "safe-to-deploy"
 version = "1.3.2"
 criteria = "safe-to-deploy"
 
-[[exemptions.cc]]
-version = "1.0.97"
-criteria = "safe-to-deploy"
-
 [[exemptions.deunicode]]
 version = "1.6.0"
 criteria = "safe-to-run"
-
-[[exemptions.errno]]
-version = "0.3.9"
-criteria = "safe-to-deploy"
 
 [[exemptions.fake]]
 version = "2.9.2"
@@ -135,8 +127,8 @@ criteria = "safe-to-deploy"
 version = "2.1.0"
 criteria = "safe-to-deploy"
 
-[[exemptions.icu_locid_transform_data]]
-version = "1.5.0"
+[[exemptions.hyper-rustls]]
+version = "0.27.2"
 criteria = "safe-to-deploy"
 
 [[exemptions.icu_normalizer]]
@@ -144,10 +136,6 @@ version = "1.5.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.icu_normalizer_data]]
-version = "1.5.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.icu_properties_data]]
 version = "1.5.0"
 criteria = "safe-to-deploy"
 
@@ -167,20 +155,12 @@ criteria = "safe-to-deploy"
 version = "0.2.1"
 criteria = "safe-to-deploy"
 
-[[exemptions.miniz_oxide]]
-version = "0.7.2"
-criteria = "safe-to-deploy"
-
 [[exemptions.mio]]
 version = "0.8.11"
 criteria = "safe-to-deploy"
 
 [[exemptions.num-format]]
 version = "0.4.4"
-criteria = "safe-to-deploy"
-
-[[exemptions.object]]
-version = "0.32.2"
 criteria = "safe-to-deploy"
 
 [[exemptions.once_cell]]
@@ -224,7 +204,11 @@ version = "0.3.0"
 criteria = "safe-to-run"
 
 [[exemptions.redox_syscall]]
-version = "0.5.1"
+version = "0.5.2"
+criteria = "safe-to-deploy"
+
+[[exemptions.ring]]
+version = "0.17.8"
 criteria = "safe-to-deploy"
 
 [[exemptions.rustc-demangle]]
@@ -267,16 +251,16 @@ criteria = "safe-to-deploy"
 version = "0.5.7"
 criteria = "safe-to-deploy"
 
+[[exemptions.spin]]
+version = "0.9.8"
+criteria = "safe-to-deploy"
+
 [[exemptions.stable_deref_trait]]
 version = "1.2.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.strsim]]
 version = "0.11.1"
-criteria = "safe-to-deploy"
-
-[[exemptions.sync_wrapper]]
-version = "0.1.2"
 criteria = "safe-to-deploy"
 
 [[exemptions.system-configuration]]
@@ -289,10 +273,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.tempfile]]
 version = "3.10.1"
-criteria = "safe-to-deploy"
-
-[[exemptions.tinystr]]
-version = "0.7.6"
 criteria = "safe-to-deploy"
 
 [[exemptions.tower]]
@@ -395,14 +375,6 @@ criteria = "safe-to-deploy"
 version = "1.0.0"
 criteria = "safe-to-deploy"
 
-[[exemptions.yoke]]
-version = "0.7.4"
-criteria = "safe-to-deploy"
-
-[[exemptions.yoke-derive]]
-version = "0.7.4"
-criteria = "safe-to-deploy"
-
 [[exemptions.zerocopy]]
 version = "0.7.34"
 criteria = "safe-to-deploy"
@@ -411,6 +383,6 @@ criteria = "safe-to-deploy"
 version = "0.7.34"
 criteria = "safe-to-deploy"
 
-[[exemptions.zerovec]]
-version = "0.10.2"
+[[exemptions.zeroize]]
+version = "1.8.1"
 criteria = "safe-to-deploy"
