@@ -131,14 +131,6 @@ criteria = "safe-to-deploy"
 version = "0.27.2"
 criteria = "safe-to-deploy"
 
-[[exemptions.icu_normalizer]]
-version = "1.5.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.icu_normalizer_data]]
-version = "1.5.0"
-criteria = "safe-to-deploy"
-
 [[exemptions.ipnet]]
 version = "2.9.0"
 criteria = "safe-to-deploy"
@@ -190,10 +182,6 @@ criteria = "safe-to-deploy"
 [[exemptions.pkg-config]]
 version = "0.3.30"
 criteria = "safe-to-deploy"
-
-[[exemptions.proptest]]
-version = "1.4.0"
-criteria = "safe-to-run"
 
 [[exemptions.quick-error]]
 version = "1.2.3"
@@ -255,10 +243,6 @@ criteria = "safe-to-deploy"
 version = "0.9.8"
 criteria = "safe-to-deploy"
 
-[[exemptions.stable_deref_trait]]
-version = "1.2.0"
-criteria = "safe-to-deploy"
-
 [[exemptions.strsim]]
 version = "0.11.1"
 criteria = "safe-to-deploy"
@@ -298,10 +282,6 @@ criteria = "safe-to-deploy"
 [[exemptions.unarray]]
 version = "0.1.4"
 criteria = "safe-to-run"
-
-[[exemptions.utf16_iter]]
-version = "1.0.5"
-criteria = "safe-to-deploy"
 
 [[exemptions.wasm-bindgen]]
 version = "0.2.92"
@@ -369,10 +349,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.winreg]]
 version = "0.52.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.write16]]
-version = "1.0.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.zerocopy]]
