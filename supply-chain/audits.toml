@@ -6,10 +6,20 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "0.21.0 -> 0.22.0"
 
+[[audits.bitflags]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.6.0"
+
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.0.99"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.0.100"
 
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -91,6 +101,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "0.32.2 -> 0.35.0"
 
+[[audits.proptest]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "1.5.0"
+
 [[audits.rustls]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -100,6 +115,11 @@ version = "0.23.10"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.102.4"
+
+[[audits.subtle]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.6.1"
 
 [[audits.sync_wrapper]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -111,6 +131,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.0.1"
 
+[[audits.tinyvec]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.6.1"
+
+[[audits.tinyvec_macros]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+
 [[audits.tokio-rustls]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -120,6 +150,11 @@ version = "0.26.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.9.0"
+
+[[audits.url]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.5.2"
 
 [[audits.url]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -342,6 +377,12 @@ criteria = "safe-to-deploy"
 user-id = 1 # Alex Crichton (alexcrichton)
 start = "2019-03-04"
 end = "2025-06-01"
+
+[[trusted.lazy_static]]
+criteria = "safe-to-deploy"
+user-id = 539 # Josh Stone (cuviper)
+start = "2024-06-21"
+end = "2025-06-25"
 
 [[trusted.libc]]
 criteria = "safe-to-deploy"
