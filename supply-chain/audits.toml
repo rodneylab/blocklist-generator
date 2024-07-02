@@ -24,6 +24,11 @@ version = "1.0.100"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.0.104"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.gimli]]
@@ -76,6 +81,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "0.7.2 -> 0.7.3"
 
+[[audits.log]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.22"
+
+[[audits.mime_guess]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.0.5"
+
 [[audits.miniz_oxide]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -95,6 +110,11 @@ delta = "0.2.11 -> 0.2.12"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.36.0"
+
+[[audits.object]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.36.1"
 
 [[audits.object]]
 who = "Rodney Lab <codesign@rodneylab.com>"
