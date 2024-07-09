@@ -199,6 +199,10 @@ criteria = "safe-to-deploy"
 version = "0.1.24"
 criteria = "safe-to-deploy"
 
+[[exemptions.rustls]]
+version = "0.23.11"
+criteria = "safe-to-deploy"
+
 [[exemptions.rustls-pemfile]]
 version = "2.1.2"
 criteria = "safe-to-deploy"
@@ -299,6 +303,10 @@ criteria = "safe-to-deploy"
 version = "0.52.5"
 criteria = "safe-to-deploy"
 
+[[exemptions.windows_aarch64_gnullvm]]
+version = "0.52.6"
+criteria = "safe-to-deploy"
+
 [[exemptions.windows_aarch64_msvc]]
 version = "0.48.5"
 criteria = "safe-to-deploy"
@@ -307,24 +315,40 @@ criteria = "safe-to-deploy"
 version = "0.52.5"
 criteria = "safe-to-deploy"
 
+[[exemptions.windows_aarch64_msvc]]
+version = "0.52.6"
+criteria = "safe-to-deploy"
+
 [[exemptions.windows_i686_gnu]]
 version = "0.48.5"
 criteria = "safe-to-deploy"
 
 [[exemptions.windows_i686_gnu]]
 version = "0.52.5"
+criteria = "safe-to-deploy"
+
+[[exemptions.windows_i686_gnu]]
+version = "0.52.6"
 criteria = "safe-to-deploy"
 
 [[exemptions.windows_i686_gnullvm]]
 version = "0.52.5"
 criteria = "safe-to-deploy"
 
+[[exemptions.windows_i686_gnullvm]]
+version = "0.52.6"
+criteria = "safe-to-deploy"
+
 [[exemptions.windows_i686_msvc]]
 version = "0.48.5"
 criteria = "safe-to-deploy"
 
 [[exemptions.windows_i686_msvc]]
 version = "0.52.5"
+criteria = "safe-to-deploy"
+
+[[exemptions.windows_i686_msvc]]
+version = "0.52.6"
 criteria = "safe-to-deploy"
 
 [[exemptions.windows_x86_64_gnu]]
@@ -335,12 +359,20 @@ criteria = "safe-to-deploy"
 version = "0.52.5"
 criteria = "safe-to-deploy"
 
+[[exemptions.windows_x86_64_gnu]]
+version = "0.52.6"
+criteria = "safe-to-deploy"
+
 [[exemptions.windows_x86_64_gnullvm]]
 version = "0.48.5"
 criteria = "safe-to-deploy"
 
 [[exemptions.windows_x86_64_gnullvm]]
 version = "0.52.5"
+criteria = "safe-to-deploy"
+
+[[exemptions.windows_x86_64_gnullvm]]
+version = "0.52.6"
 criteria = "safe-to-deploy"
 
 [[exemptions.winreg]]
