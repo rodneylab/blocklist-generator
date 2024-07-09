@@ -136,6 +136,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.102.4"
 
+[[audits.rustls-webpki]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.102.5"
+
 [[audits.subtle]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -155,6 +160,11 @@ version = "1.0.1"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.6.1"
+
+[[audits.tinyvec]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.8.0"
 
 [[audits.tinyvec_macros]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -190,6 +200,16 @@ version = "0.2.2"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "0.5.4 -> 0.5.5"
+
+[[audits.zerocopy]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.7.35"
+
+[[audits.zerocopy-derive]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.7.35"
 
 [[audits.zerofrom]]
 who = "Rodney Lab <codesign@rodneylab.com>"
