@@ -79,8 +79,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.clap]]
-version = "4.5.8"
-when = "2024-06-28"
+version = "4.5.9"
+when = "2024-07-09"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -93,8 +93,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_builder]]
-version = "4.5.8"
-when = "2024-06-28"
+version = "4.5.9"
+when = "2024-07-09"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -373,15 +373,15 @@ user-login = "Amanieu"
 user-name = "Amanieu d'Antras"
 
 [[publisher.serde]]
-version = "1.0.203"
-when = "2024-05-25"
+version = "1.0.204"
+when = "2024-07-06"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.serde_derive]]
-version = "1.0.203"
-when = "2024-05-25"
+version = "1.0.204"
+when = "2024-07-06"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -415,8 +415,8 @@ user-login = "mbrubeck"
 user-name = "Matt Brubeck"
 
 [[publisher.syn]]
-version = "2.0.68"
-when = "2024-06-23"
+version = "2.0.70"
+when = "2024-07-08"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -471,8 +471,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.toml_edit]]
-version = "0.22.14"
-when = "2024-06-03"
+version = "0.22.15"
+when = "2024-07-08"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -562,8 +562,8 @@ user-login = "kennykerr"
 user-name = "Kenny Kerr"
 
 [[publisher.windows-targets]]
-version = "0.52.5"
-when = "2024-04-12"
+version = "0.52.6"
+when = "2024-07-03"
 user-id = 64539
 user-login = "kennykerr"
 user-name = "Kenny Kerr"
@@ -576,8 +576,8 @@ user-login = "kennykerr"
 user-name = "Kenny Kerr"
 
 [[publisher.windows_x86_64_msvc]]
-version = "0.52.5"
-when = "2024-04-12"
+version = "0.52.6"
+when = "2024-07-03"
 user-id = 64539
 user-login = "kennykerr"
 user-name = "Kenny Kerr"
