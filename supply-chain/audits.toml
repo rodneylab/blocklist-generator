@@ -29,6 +29,11 @@ version = "1.0.104"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.1.5"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.gimli]]
@@ -140,6 +145,16 @@ version = "0.102.4"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.102.5"
+
+[[audits.security-framework]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.11.1"
+
+[[audits.security-framework-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.11.1"
 
 [[audits.subtle]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -369,6 +384,12 @@ criteria = "safe-to-deploy"
 user-id = 359 # Sean McArthur (seanmonstar)
 start = "2019-04-05"
 end = "2025-06-01"
+
+[[trusted.http-body]]
+criteria = "safe-to-deploy"
+user-id = 359 # Sean McArthur (seanmonstar)
+start = "2019-10-01"
+end = "2025-07-16"
 
 [[trusted.http-body-util]]
 criteria = "safe-to-deploy"
