@@ -72,8 +72,8 @@ user-login = "fitzgen"
 user-name = "Nick Fitzgerald"
 
 [[publisher.bytes]]
-version = "1.6.0"
-when = "2024-03-22"
+version = "1.6.1"
+when = "2024-07-13"
 user-id = 6741
 user-login = "Darksonn"
 user-name = "Alice Ryhl"
@@ -183,6 +183,13 @@ user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
+[[publisher.http-body]]
+version = "1.0.1"
+when = "2024-07-12"
+user-id = 359
+user-login = "seanmonstar"
+user-name = "Sean McArthur"
+
 [[publisher.http-body-util]]
 version = "0.1.2"
 when = "2024-06-10"
@@ -198,8 +205,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.hyper]]
-version = "1.4.0"
-when = "2024-07-01"
+version = "1.4.1"
+when = "2024-07-09"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -415,22 +422,22 @@ user-login = "mbrubeck"
 user-name = "Matt Brubeck"
 
 [[publisher.syn]]
-version = "2.0.70"
-when = "2024-07-08"
+version = "2.0.71"
+when = "2024-07-12"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror]]
-version = "1.0.61"
-when = "2024-05-17"
+version = "1.0.62"
+when = "2024-07-11"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror-impl]]
-version = "1.0.61"
-when = "2024-05-17"
+version = "1.0.62"
+when = "2024-07-11"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -620,17 +627,6 @@ who = "Alex Crichton <alex@alexcrichton.com>"
 criteria = "safe-to-deploy"
 delta = "0.4.1 -> 0.5.0"
 notes = "Minor changes for a `no_std` upgrade but otherwise everything looks as expected."
-
-[[audits.bytecode-alliance.audits.http-body]]
-who = "Pat Hickey <phickey@fastly.com>"
-criteria = "safe-to-deploy"
-version = "1.0.0-rc.2"
-
-[[audits.bytecode-alliance.audits.http-body]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-delta = "1.0.0-rc.2 -> 1.0.0"
-notes = "Only minor changes made for a stable release."
 
 [[audits.bytecode-alliance.audits.idna]]
 who = "Alex Crichton <alex@alexcrichton.com>"
