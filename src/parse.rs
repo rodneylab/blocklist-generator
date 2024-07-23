@@ -183,7 +183,7 @@ mod tests {
 
     proptest! {
     #[test]
-    fn parse_ipv4_adress_parses_valid_ipv4_proptest(
+    fn parse_ipv4_address_parses_valid_ipv4_proptest(
         ipv4_address in arb_ipv4_address()){
         // arrange
 
