@@ -422,32 +422,32 @@ user-login = "mbrubeck"
 user-name = "Matt Brubeck"
 
 [[publisher.syn]]
-version = "2.0.71"
-when = "2024-07-12"
+version = "2.0.72"
+when = "2024-07-21"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror]]
-version = "1.0.62"
-when = "2024-07-11"
+version = "1.0.63"
+when = "2024-07-17"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror-impl]]
-version = "1.0.62"
-when = "2024-07-11"
+version = "1.0.63"
+when = "2024-07-17"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.tokio]]
-version = "1.38.0"
-when = "2024-05-30"
-user-id = 10
-user-login = "carllerche"
-user-name = "Carl Lerche"
+version = "1.38.1"
+when = "2024-07-16"
+user-id = 6741
+user-login = "Darksonn"
+user-name = "Alice Ryhl"
 
 [[publisher.tokio-macros]]
 version = "2.3.0"
@@ -464,8 +464,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.toml]]
-version = "0.8.14"
-when = "2024-06-03"
+version = "0.8.15"
+when = "2024-07-17"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -478,8 +478,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.toml_edit]]
-version = "0.22.15"
-when = "2024-07-08"
+version = "0.22.16"
+when = "2024-07-17"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -590,8 +590,8 @@ user-login = "kennykerr"
 user-name = "Kenny Kerr"
 
 [[publisher.winnow]]
-version = "0.6.13"
-when = "2024-06-06"
+version = "0.6.15"
+when = "2024-07-22"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
