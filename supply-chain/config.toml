@@ -152,11 +152,11 @@ version = "1.19.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.openssl]]
-version = "0.10.64"
+version = "0.10.66"
 criteria = "safe-to-deploy"
 
 [[exemptions.openssl-sys]]
-version = "0.9.102"
+version = "0.9.103"
 criteria = "safe-to-deploy"
 
 [[exemptions.pin-project]]
