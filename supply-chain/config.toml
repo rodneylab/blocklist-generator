@@ -140,7 +140,7 @@ version = "0.2.1"
 criteria = "safe-to-deploy"
 
 [[exemptions.mio]]
-version = "0.8.11"
+version = "1.0.1"
 criteria = "safe-to-deploy"
 
 [[exemptions.num-format]]
@@ -175,6 +175,10 @@ criteria = "safe-to-deploy"
 version = "0.3.30"
 criteria = "safe-to-deploy"
 
+[[exemptions.ppv-lite86]]
+version = "0.2.18"
+criteria = "safe-to-run"
+
 [[exemptions.quick-error]]
 version = "1.2.3"
 criteria = "safe-to-run"
@@ -189,14 +193,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.ring]]
 version = "0.17.8"
-criteria = "safe-to-deploy"
-
-[[exemptions.rustc-demangle]]
-version = "0.1.24"
-criteria = "safe-to-deploy"
-
-[[exemptions.rustls]]
-version = "0.23.11"
 criteria = "safe-to-deploy"
 
 [[exemptions.rustls-pemfile]]

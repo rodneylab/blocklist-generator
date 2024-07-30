@@ -96,13 +96,13 @@ pub fn hostfile(file_body: &str, set: &mut HashSet<Host, RandomState>) {
 mod tests {
     use std::collections::HashSet;
 
-    use crate::parse::{domainlist, hostfile, parse_domainlist_line};
-
-    use super::{parse_hostfile_line, parse_hostname, parse_ipv4_address, parse_ipv4_octet};
     use ahash::RandomState;
     use fake::{faker, Fake};
     use proptest::{prop_assert_eq, proptest, strategy::Strategy};
     use url::Host;
+
+    use super::{parse_hostfile_line, parse_hostname, parse_ipv4_address, parse_ipv4_octet};
+    use crate::parse::{domainlist, hostfile, parse_domainlist_line};
 
     #[test]
     fn parse_ip4_octet_parses_valid_ipv4_octet() {
