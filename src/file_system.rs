@@ -1,14 +1,15 @@
-use ahash::RandomState;
-use askama::Template;
-use humansize::{format_size, DECIMAL};
-use log::{error, info};
-use serde::Deserialize;
 use std::{
     collections::HashSet,
     fs::{self, File},
     io::Write,
     path::{Path, PathBuf},
 };
+
+use ahash::RandomState;
+use askama::Template;
+use humansize::{format_size, DECIMAL};
+use log::{error, info};
+use serde::Deserialize;
 use url::Host;
 
 use crate::parse::domainlist as parse_domainlist;
@@ -61,6 +62,11 @@ fn domain_to_blocklist_rpz_domain(host: &Host) -> String {
     format!("{domain}\tCNAME\t.\n*.{domain}\tCNAME\t.\n")
 }
 
+fn domain_to_unbound_local_zone(host: &Host) -> String {
+    let domain = host.to_string();
+    format!("local-zone: \"{domain}\" always_nxdomain\n")
+}
+
 fn write_to_file<P: AsRef<Path>>(content: &str, output_path: &P) {
     let output_display_path = output_path.as_ref().display().to_string();
     let Ok(mut outfile) = File::create(output_path) else {
@@ -72,6 +78,15 @@ fn write_to_file<P: AsRef<Path>>(content: &str, output_path: &P) {
         panic!("Error writing to output file");
     }
     info!("Wrote data to file: {output_display_path}");
+}
+
+fn print_output_file_metadata<P: AsRef<Path>>(output_path: &P) {
+    if let Ok(value) = fs::metadata(output_path) {
+        let bytes = value.len();
+        let display_bytes = format_size(bytes, DECIMAL);
+        let display_path = output_path.as_ref().display();
+        std::println!("Written {display_bytes} to {display_path}");
+    }
 }
 
 pub fn write_blocklist_rpz_file(blocklist_domains: &[Host]) {
@@ -87,10 +102,17 @@ pub fn write_blocklist_rpz_file(blocklist_domains: &[Host]) {
         .expect("Unexpected error rendering template");
     let output_path = PathBuf::from("./blocklist.rpz");
     write_to_file(&file_content, &output_path);
-    if let Ok(value) = fs::metadata(&output_path) {
-        let bytes = value.len();
-        let display_bytes = format_size(bytes, DECIMAL);
-        let display_path = output_path.display();
-        std::println!("Written {display_bytes} to {display_path}");
-    }
+    print_output_file_metadata(&output_path);
+}
+
+pub fn write_unbound_local_zone_file(blocklist_domains: &[Host]) {
+    let output_path = PathBuf::from("./zone-block-general.conf");
+    let file_content = blocklist_domains
+        .iter()
+        .fold(String::new(), |mut acc, val| {
+            acc.push_str(&domain_to_unbound_local_zone(val));
+            acc
+        });
+    write_to_file(&file_content, &output_path);
+    print_output_file_metadata(&output_path);
 }

@@ -1,3 +1,4 @@
 /target
 *.profraw
 blocklist.rpz
+zone-block-general.conf
