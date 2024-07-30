@@ -4,16 +4,19 @@ mod fetch;
 mod file_system;
 mod parse;
 
+use std::{collections::HashSet, path::PathBuf};
+
 use ahash::RandomState;
 use clap::Parser;
-use fetch::Client as FetchClient;
-use file_system::{
-    get_blocklists_from_config_file, get_custom_blocked_names, write_blocklist_rpz_file, Blocklists,
-};
 use log::warn;
 use num_format::{Locale, ToFormattedString};
-use std::{collections::HashSet, path::PathBuf};
 use url::Host;
+
+use fetch::Client as FetchClient;
+use file_system::{
+    get_blocklists_from_config_file, get_custom_blocked_names, write_blocklist_rpz_file,
+    write_unbound_local_zone_file, Blocklists,
+};
 
 #[derive(Parser)]
 #[clap(author,version,about,long_about=None)]
@@ -92,6 +95,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     result.sort();
 
     write_blocklist_rpz_file(&result);
+    write_unbound_local_zone_file(&result);
 
     println!("{} results", result.len().to_formatted_string(&Locale::en));
     Ok(())
