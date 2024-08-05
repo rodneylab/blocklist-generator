@@ -27,7 +27,7 @@ reqwest = "0.12.5"
 serde = { version = "1.0", features = ["derive"] }
 thiserror = "1.0.63"
 tokio = { version = "1", features = ["full"] }
-toml = { version = "0.8.16", features = ["parse"] }
+toml = { version = "0.8.19", features = ["parse"] }
 url = "2.5.2"
 
 [dev-dependencies]
