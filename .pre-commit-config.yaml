@@ -4,7 +4,7 @@ repos:
         stages:
           - commit-msg
     repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.27.0
+    rev: v3.29.0
   - hooks:
       - id: fmt
       - id: cargo-check
@@ -14,11 +14,11 @@ repos:
   - hooks:
       - id: gitleaks
     repo: https://github.com/gitleaks/gitleaks
-    rev: v8.18.3
+    rev: v8.18.4
   - hooks:
       - id: yamlfmt
     repo: https://github.com/google/yamlfmt
-    rev: v0.12.1
+    rev: v0.13.0
   - hooks:
       - args:
           - --markdown-linebreak-ext=md
