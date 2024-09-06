@@ -111,10 +111,6 @@ criteria = "safe-to-deploy"
 version = "2.1.0"
 criteria = "safe-to-deploy"
 
-[[exemptions.hyper-rustls]]
-version = "0.27.2"
-criteria = "safe-to-deploy"
-
 [[exemptions.ipnet]]
 version = "2.9.0"
 criteria = "safe-to-deploy"
@@ -205,10 +201,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.strsim]]
 version = "0.11.1"
-criteria = "safe-to-deploy"
-
-[[exemptions.system-configuration]]
-version = "0.6.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.tower]]
