@@ -59,6 +59,11 @@ version = "1.1.13"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.1.16"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.core-foundation-sys]]
@@ -66,10 +71,20 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.8.7"
 
+[[audits.fastrand]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.1.1"
+
 [[audits.gimli]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "0.28.1 -> 0.29.0"
+
+[[audits.hyper-rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.27.3"
 
 [[audits.icu_collections]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -169,6 +184,11 @@ version = "0.36.3"
 [[audits.object]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.36.4"
+
+[[audits.object]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.32.2 -> 0.35.0"
 
 [[audits.ppv-lite86]]
@@ -211,6 +231,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.102.6"
 
+[[audits.rustls-webpki]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.102.7"
+
 [[audits.security-framework]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -235,6 +260,11 @@ version = "0.1.2"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.0.1"
+
+[[audits.system-configuration]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.6.1"
 
 [[audits.system-configuration-sys]]
 who = "Rodney Lab <codesign@rodneylab.com>"
