@@ -4,6 +4,11 @@
 [[audits.addr2line]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.24.1"
+
+[[audits.addr2line]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.21.0 -> 0.22.0"
 
 [[audits.arrayvec]]
@@ -64,6 +69,11 @@ version = "1.1.16"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.1.18"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.core-foundation-sys]]
@@ -75,6 +85,11 @@ version = "0.8.7"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.1.1"
+
+[[audits.gimli]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.31.0"
 
 [[audits.gimli]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -120,6 +135,11 @@ delta = "1.4.0 -> 1.5.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "0.5.0 -> 1.0.0"
+
+[[audits.ipnet]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.10.0"
 
 [[audits.libc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -211,6 +231,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.12"
 
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.13"
+
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -235,6 +260,16 @@ version = "0.102.6"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.102.7"
+
+[[audits.rustls-webpki]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.102.8"
+
+[[audits.schannel]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.24"
 
 [[audits.security-framework]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -418,6 +453,12 @@ criteria = "safe-to-deploy"
 user-id = 2915 # Amanieu d'Antras (Amanieu)
 start = "2023-06-29"
 end = "2025-06-01"
+
+[[trusted.backtrace]]
+criteria = "safe-to-deploy"
+user-id = 539 # Josh Stone (cuviper)
+start = "2024-03-21"
+end = "2025-09-13"
 
 [[trusted.basic-toml]]
 criteria = "safe-to-deploy"
@@ -832,6 +873,12 @@ criteria = "safe-to-deploy"
 user-id = 359 # Sean McArthur (seanmonstar)
 start = "2019-03-05"
 end = "2025-06-01"
+
+[[trusted.unicode-ident]]
+criteria = "safe-to-deploy"
+user-id = 3618 # David Tolnay (dtolnay)
+start = "2021-10-02"
+end = "2025-09-13"
 
 [[trusted.want]]
 criteria = "safe-to-deploy"
