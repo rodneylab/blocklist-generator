@@ -31,5 +31,5 @@ toml = { version = "0.8.19", features = ["parse"] }
 url = "2.5.2"
 
 [dev-dependencies]
-fake = "2.9.2"
+fake = "2.10.0"
 proptest = "1.5.0"
