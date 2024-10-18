@@ -110,12 +110,16 @@ impl Client {
     pub async fn domainlists(
         &self,
         sources: &[Source<'_>],
+        concurrent_downloads: u32,
         set: &mut HashSet<Host, RandomState>,
     ) -> Result<(), AppError> {
-        let concurrent_downloads = 3;
         let mut result_sets = self
             .fetch_futures(sources)
-            .buffer_unordered(concurrent_downloads)
+            .buffer_unordered(
+                concurrent_downloads
+                    .try_into()
+                    .expect("max concurrent download should be representable as a usize"),
+            )
             .collect::<Vec<Result<HashSet<Host, RandomState>, AppError>>>()
             .await;
         for result_set in &mut result_sets {
