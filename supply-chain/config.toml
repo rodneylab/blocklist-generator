@@ -47,10 +47,6 @@ criteria = "safe-to-deploy"
 version = "1.6.0"
 criteria = "safe-to-run"
 
-[[exemptions.fake]]
-version = "2.9.2"
-criteria = "safe-to-run"
-
 [[exemptions.futures]]
 version = "0.3.30"
 criteria = "safe-to-deploy"
@@ -101,10 +97,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.humantime]]
 version = "2.1.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.libc]]
-version = "0.2.158"
 criteria = "safe-to-deploy"
 
 [[exemptions.minimal-lexical]]
