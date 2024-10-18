@@ -27,6 +27,10 @@ struct Cli {
     /// Config file path (default: ./blocklist-generator.toml)
     #[clap(short, long, value_parser)]
     config: Option<PathBuf>,
+
+    /// (default: 3)
+    #[clap(short, long, value_parser)]
+    max_concurrent_downloads: Option<u32>,
 }
 
 #[derive(Debug)]
@@ -76,6 +80,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         Some(value) => value,
         None => &default_config_path,
     };
+    let concurrent_downloads = &cli.max_concurrent_downloads.unwrap_or(3);
 
     let blocklists = get_blocklists_from_config_file(config_path);
     let sources = sources_from_blocklists(&blocklists);
@@ -83,7 +88,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let fetch_client = FetchClient::default();
     let hasher = RandomState::new();
     let mut set: HashSet<Host, RandomState> = HashSet::with_capacity_and_hasher(524_288, hasher);
-    fetch_client.domainlists(&sources, &mut set).await?;
+    fetch_client
+        .domainlists(&sources, *concurrent_downloads, &mut set)
+        .await?;
 
     set.remove(&Host::parse("0.0.0.0").unwrap());
     set.remove(&Host::parse("127.0.0.1").unwrap()); // DevSkim: ignore DS162092 - use of localhost IP is for removal from generated file, and not for accessing the localhost
