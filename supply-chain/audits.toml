@@ -84,6 +84,11 @@ version = "1.1.18"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.1.37"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.core-foundation-sys]]
@@ -96,10 +101,20 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "2.10.0"
 
+[[audits.fake]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "3.0.1"
+
 [[audits.fastrand]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.1.1"
+
+[[audits.fastrand]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.2.0"
 
 [[audits.futures]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -195,6 +210,11 @@ version = "2.10.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.10.1"
+
+[[audits.libc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.162"
 
 [[audits.libc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -391,6 +411,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.12.0"
 
+[[audits.security-framework-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.12.1"
+
 [[audits.subtle]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -430,6 +455,11 @@ version = "3.12.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "3.13.0"
+
+[[audits.tempfile]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "3.14.0"
 
 [[audits.tinyvec]]
 who = "Rodney Lab <codesign@rodneylab.com>"

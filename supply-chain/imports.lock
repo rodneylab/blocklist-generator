@@ -324,8 +324,8 @@ user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.regex-automata]]
-version = "0.4.8"
-when = "2024-09-29"
+version = "0.4.9"
+when = "2024-11-11"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
@@ -345,8 +345,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.rustix]]
-version = "0.38.39"
-when = "2024-11-04"
+version = "0.38.40"
+when = "2024-11-10"
 user-id = 6825
 user-login = "sunfishcode"
 user-name = "Dan Gohman"
@@ -366,15 +366,15 @@ user-login = "Amanieu"
 user-name = "Amanieu d'Antras"
 
 [[publisher.serde]]
-version = "1.0.214"
-when = "2024-10-28"
+version = "1.0.215"
+when = "2024-11-11"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.serde_derive]]
-version = "1.0.214"
-when = "2024-10-28"
+version = "1.0.215"
+when = "2024-11-11"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -415,22 +415,22 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror]]
-version = "1.0.68"
-when = "2024-11-04"
+version = "2.0.3"
+when = "2024-11-10"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror-impl]]
-version = "1.0.68"
-when = "2024-11-04"
+version = "2.0.3"
+when = "2024-11-10"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.tokio]]
-version = "1.41.0"
-when = "2024-10-22"
+version = "1.41.1"
+when = "2024-11-07"
 user-id = 6741
 user-login = "Darksonn"
 user-name = "Alice Ryhl"
