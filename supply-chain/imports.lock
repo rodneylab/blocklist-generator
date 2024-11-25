@@ -86,22 +86,22 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.clap]]
-version = "4.5.20"
-when = "2024-10-08"
+version = "4.5.21"
+when = "2024-11-13"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap-verbosity-flag]]
-version = "2.2.2"
-when = "2024-09-26"
+version = "2.2.3"
+when = "2024-11-16"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_builder]]
-version = "4.5.20"
-when = "2024-10-08"
+version = "4.5.21"
+when = "2024-11-13"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -114,8 +114,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_lex]]
-version = "0.7.2"
-when = "2024-07-25"
+version = "0.7.3"
+when = "2024-11-13"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -163,8 +163,8 @@ user-login = "sunfishcode"
 user-name = "Dan Gohman"
 
 [[publisher.h2]]
-version = "0.4.6"
-when = "2024-08-19"
+version = "0.4.7"
+when = "2024-11-19"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -205,8 +205,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.hyper]]
-version = "1.5.0"
-when = "2024-10-15"
+version = "1.5.1"
+when = "2024-11-19"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -239,6 +239,13 @@ user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
 
+[[publisher.itoa]]
+version = "1.0.12"
+when = "2024-11-20"
+user-id = 3618
+user-login = "dtolnay"
+user-name = "David Tolnay"
+
 [[publisher.js-sys]]
 version = "0.3.72"
 when = "2024-10-10"
@@ -252,13 +259,6 @@ when = "2024-06-21"
 user-id = 539
 user-login = "cuviper"
 user-name = "Josh Stone"
-
-[[publisher.libc]]
-version = "0.2.153"
-when = "2024-01-31"
-user-id = 51017
-user-login = "JohnTitor"
-user-name = "Yuki Okushi"
 
 [[publisher.linux-raw-sys]]
 version = "0.4.14"
@@ -345,8 +345,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.rustix]]
-version = "0.38.40"
-when = "2024-11-10"
+version = "0.38.41"
+when = "2024-11-18"
 user-id = 6825
 user-login = "sunfishcode"
 user-name = "Dan Gohman"
@@ -380,8 +380,8 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.serde_json]]
-version = "1.0.132"
-when = "2024-10-19"
+version = "1.0.133"
+when = "2024-11-17"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -478,8 +478,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.unicode-ident]]
-version = "1.0.13"
-when = "2024-09-11"
+version = "1.0.14"
+when = "2024-11-20"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -603,17 +603,6 @@ criteria = "safe-to-deploy"
 delta = "0.4.1 -> 0.5.0"
 notes = "Minor changes for a `no_std` upgrade but otherwise everything looks as expected."
 
-[[audits.bytecode-alliance.audits.libc]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-delta = "0.2.153 -> 0.2.158"
-notes = "More platforms, more definitions, more headers, it's still just `libc`"
-
-[[audits.bytecode-alliance.audits.libc]]
-who = "Dan Gohman <dev@sunfishcode.online>"
-criteria = "safe-to-deploy"
-delta = "0.2.158 -> 0.2.161"
-
 [[audits.bytecode-alliance.audits.native-tls]]
 who = "Pat Hickey <phickey@fastly.com>"
 criteria = "safe-to-deploy"
@@ -703,35 +692,6 @@ and there were no hits.
 
 `heck` (version `0.3.3`) has been added to Chromium in
 https://source.chromium.org/chromium/chromium/src/+/28841c33c77833cc30b286f9ae24c97e7a8f4057
-"""
-aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
-
-[[audits.google.audits.itoa]]
-who = "Lukasz Anforowicz <lukasza@chromium.org>"
-criteria = "safe-to-deploy"
-version = "1.0.10"
-notes = '''
-I grepped for \"crypt\", \"cipher\", \"fs\", \"net\" - there were no hits.
-
-There are a few places where `unsafe` is used.  Unsafe review notes can be found
-in https://crrev.com/c/5350697.
-
-Version 1.0.1 of this crate has been added to Chromium in
-https://crrev.com/c/3321896.
-'''
-aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
-
-[[audits.google.audits.itoa]]
-who = "Lukasz Anforowicz <lukasza@chromium.org>"
-criteria = "safe-to-deploy"
-delta = "1.0.10 -> 1.0.11"
-notes = """
-Straightforward diff between 1.0.10 and 1.0.11 - only 3 commits:
-
-* Bumping up the version
-* A touch up of comments
-* And my own PR to make `unsafe` blocks more granular:
-  https://github.com/dtolnay/itoa/pull/42
 """
 aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
 
