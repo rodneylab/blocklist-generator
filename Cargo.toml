@@ -28,7 +28,7 @@ serde = { version = "1.0.214", features = ["derive"] }
 thiserror = "2.0.3"
 tokio = { version = "1.41.1", features = ["full"] }
 toml = { version = "0.8.19", features = ["parse"] }
-url = "2.5.3"
+url = "2.5.4"
 
 [dev-dependencies]
 fake = "3.0.1"
