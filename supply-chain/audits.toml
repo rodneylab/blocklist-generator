@@ -366,6 +366,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.18"
 
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.19"
+
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -525,6 +530,21 @@ version = "0.3.3"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.3"
+
+[[audits.tracing]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.41"
+
+[[audits.tracing-core]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.32"
+
+[[audits.tracing-core]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.33"
 
 [[audits.untrusted]]
 who = "Rodney Lab <codesign@rodneylab.com>"
