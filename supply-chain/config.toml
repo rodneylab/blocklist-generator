@@ -88,7 +88,7 @@ version = "2.1.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.libc]]
-version = "0.2.164"
+version = "0.2.166"
 criteria = "safe-to-deploy"
 
 [[exemptions.minimal-lexical]]
@@ -145,14 +145,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.stable_deref_trait]]
 version = "1.2.0"
-criteria = "safe-to-deploy"
-
-[[exemptions.tracing]]
-version = "0.1.40"
-criteria = "safe-to-deploy"
-
-[[exemptions.tracing-core]]
-version = "0.1.32"
 criteria = "safe-to-deploy"
 
 [[exemptions.unarray]]
