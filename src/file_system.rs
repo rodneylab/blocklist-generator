@@ -89,6 +89,19 @@ fn print_output_file_metadata<P: AsRef<Path>>(output_path: &P) {
     }
 }
 
+pub fn write_domain_blocklist_file(blocklist_domains: &[Host]) {
+    let domains = blocklist_domains
+        .iter()
+        .fold(String::new(), |mut acc, val| {
+            acc.push_str(&val.to_string());
+            acc.push('\n');
+            acc
+        });
+    let output_path = PathBuf::from("./domain-blocklist.txt");
+    write_to_file(&domains, &output_path);
+    print_output_file_metadata(&output_path);
+}
+
 pub fn write_blocklist_rpz_file(blocklist_domains: &[Host]) {
     let domains = blocklist_domains
         .iter()
