@@ -15,7 +15,7 @@ use url::Host;
 use fetch::Client as FetchClient;
 use file_system::{
     get_blocklists_from_config_file, get_custom_blocked_names, write_blocklist_rpz_file,
-    write_unbound_local_zone_file, Blocklists,
+    write_domain_blocklist_file, write_unbound_local_zone_file, Blocklists,
 };
 
 #[derive(Parser)]
@@ -103,6 +103,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     write_blocklist_rpz_file(&result);
     write_unbound_local_zone_file(&result);
+    write_domain_blocklist_file(&result);
 
     println!("{} results", result.len().to_formatted_string(&Locale::en));
     Ok(())
