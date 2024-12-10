@@ -14,7 +14,7 @@ description = "CLI utility for generating blocklist.rpz files for use with firew
 [dependencies]
 ahash = "0.8.11"
 askama = "0.12.1"
-clap = { version = "4.5.21", features = ["derive"] }
+clap = { version = "4.5.23", features = ["derive"] }
 clap-verbosity-flag = "3.0.1"
 env_logger = "0.11"
 futures = "0.3.30"
