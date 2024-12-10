@@ -43,6 +43,14 @@ criteria = "safe-to-deploy"
 version = "1.1.2"
 criteria = "safe-to-deploy"
 
+[[exemptions.deadpool]]
+version = "0.10.0"
+criteria = "safe-to-run"
+
+[[exemptions.deadpool-runtime]]
+version = "0.1.4"
+criteria = "safe-to-run"
+
 [[exemptions.deunicode]]
 version = "1.6.0"
 criteria = "safe-to-run"
@@ -198,6 +206,10 @@ criteria = "safe-to-deploy"
 [[exemptions.windows_x86_64_gnullvm]]
 version = "0.52.6"
 criteria = "safe-to-deploy"
+
+[[exemptions.wiremock]]
+version = "0.6.2"
+criteria = "safe-to-run"
 
 [[exemptions.yoke]]
 version = "0.7.5"
