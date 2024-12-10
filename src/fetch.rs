@@ -219,7 +219,7 @@ mod tests {
         let outcome = client.domainlist(&mock_remote_uri).await.unwrap_err();
 
         // assert
-        assert_eq!(format!("{outcome}"), 
+        assert_eq!(format!("{outcome}"),
   format!("Error fetching blocklist `{mock_remote_uri}`.  Check the URL is correct and the connection is up."));
     }
 
@@ -264,7 +264,7 @@ mod tests {
         let outcome = client.hostsfile(&mock_remote_uri).await.unwrap_err();
 
         // assert
-        assert_eq!(format!("{outcome}"), 
+        assert_eq!(format!("{outcome}"),
   format!("Error fetching blocklist `{mock_remote_uri}`.  Check the URL is correct and the connection is up."));
     }
 
