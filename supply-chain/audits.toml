@@ -101,6 +101,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.8.7"
 
+[[audits.errno]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.10"
+
 [[audits.fake]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
@@ -120,6 +125,11 @@ version = "2.1.1"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.2.0"
+
+[[audits.fastrand]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.3.0"
 
 [[audits.futures]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -265,6 +275,12 @@ delta = "0.7.2 -> 0.7.3"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.0.2"
+
+[[audits.mio]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.0.3"
+notes = " Add any notes about your audit below this line:"
 
 [[audits.native-tls]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -520,6 +536,11 @@ version = "2.4.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.26.0"
+
+[[audits.tokio-rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.26.1"
 
 [[audits.tower-layer]]
 who = "Rodney Lab <codesign@rodneylab.com>"
