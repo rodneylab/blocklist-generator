@@ -43,10 +43,6 @@ criteria = "safe-to-deploy"
 version = "1.1.2"
 criteria = "safe-to-deploy"
 
-[[exemptions.cc]]
-version = "1.2.3"
-criteria = "safe-to-deploy"
-
 [[exemptions.deadpool]]
 version = "0.10.0"
 criteria = "safe-to-run"
@@ -115,13 +111,13 @@ criteria = "safe-to-deploy"
 version = "1.19.0"
 criteria = "safe-to-deploy"
 
+[[exemptions.proptest]]
+version = "1.6.0"
+criteria = "safe-to-run"
+
 [[exemptions.rand_xorshift]]
 version = "0.3.0"
 criteria = "safe-to-run"
-
-[[exemptions.redox_syscall]]
-version = "0.5.7"
-criteria = "safe-to-deploy"
 
 [[exemptions.ring]]
 version = "0.17.8"
@@ -209,8 +205,4 @@ criteria = "safe-to-run"
 
 [[exemptions.yoke]]
 version = "0.7.5"
-criteria = "safe-to-deploy"
-
-[[exemptions.zeroize]]
-version = "1.8.1"
 criteria = "safe-to-deploy"
