@@ -94,6 +94,11 @@ version = "1.2.1"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.4"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.core-foundation-sys]]
@@ -352,6 +357,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "1.5.0"
 
+[[audits.redox_syscall]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.5.8"
+
 [[audits.rustls]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -387,6 +397,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.19"
 
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.20"
+
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -401,6 +416,11 @@ version = "2.2.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.10.0"
+
+[[audits.rustls-pki-types]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.10.1"
 
 [[audits.rustls-webpki]]
 who = "Rodney Lab <codesign@rodneylab.com>"
