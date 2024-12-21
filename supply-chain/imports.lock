@@ -100,8 +100,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap-verbosity-flag]]
-version = "3.0.1"
-when = "2024-11-26"
+version = "3.0.2"
+when = "2024-12-16"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -205,8 +205,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.hyper]]
-version = "1.5.1"
-when = "2024-11-19"
+version = "1.5.2"
+when = "2024-12-16"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -422,15 +422,15 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror]]
-version = "2.0.7"
-when = "2024-12-13"
+version = "2.0.8"
+when = "2024-12-18"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror-impl]]
-version = "2.0.7"
-when = "2024-12-13"
+version = "2.0.8"
+when = "2024-12-18"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -610,6 +610,26 @@ criteria = "safe-to-deploy"
 delta = "0.4.1 -> 0.5.0"
 notes = "Minor changes for a `no_std` upgrade but otherwise everything looks as expected."
 
+[[audits.bytecode-alliance.audits.miniz_oxide]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+version = "0.7.1"
+notes = """
+This crate is a Rust implementation of zlib compression/decompression and has
+been used by default by the Rust standard library for quite some time. It's also
+a default dependency of the popular `backtrace` crate for decompressing debug
+information. This crate forbids unsafe code and does not otherwise access system
+resources. It's originally a port of the `miniz.c` library as well, and given
+its own longevity should be relatively hardened against some of the more common
+compression-related issues.
+"""
+
+[[audits.bytecode-alliance.audits.miniz_oxide]]
+who = "Alex Crichton <alex@alexcrichton.com>"
+criteria = "safe-to-deploy"
+delta = "0.7.1 -> 0.8.0"
+notes = "Minor updates, using new Rust features like `const`, no major changes."
+
 [[audits.bytecode-alliance.audits.native-tls]]
 who = "Pat Hickey <phickey@fastly.com>"
 criteria = "safe-to-deploy"
@@ -721,18 +741,7 @@ aggregated-from = "https://chromium.googlesource.com/chromiumos/third_party/rust
 [[audits.google.audits.miniz_oxide]]
 who = "Lukasz Anforowicz <lukasza@chromium.org>"
 criteria = "safe-to-deploy"
-delta = "0.7.4 -> 0.8.0"
-notes = '''
-This delta audit has been reviewed in https://crrev.com/c/5811890
-
-The delta can be inspected at https://diff.rs/miniz_oxide/0.7.4/0.8.0
-and is fairly small (changes related to `const fn` and to `adler2`
-switch).
-
-I've grepped for `-i cipher`, `-i crypto`, `\bfs\b`, `\bnet\b`, and
-`\bunsafe\b`.  There were no hits (except for comments in `core.rs`
-and in `Readme.md`).
-'''
+delta = "0.8.0 -> 0.8.2"
 aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
 
 [[audits.google.audits.nom]]
