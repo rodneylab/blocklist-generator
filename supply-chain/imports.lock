@@ -149,15 +149,15 @@ user-login = "hsivonen"
 user-name = "Henri Sivonen"
 
 [[publisher.env_filter]]
-version = "0.1.2"
-when = "2024-07-25"
+version = "0.1.3"
+when = "2024-12-20"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.env_logger]]
-version = "0.11.5"
-when = "2024-07-25"
+version = "0.11.6"
+when = "2024-12-20"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -387,8 +387,8 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.serde_json]]
-version = "1.0.133"
-when = "2024-11-17"
+version = "1.0.134"
+when = "2024-12-21"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -415,22 +415,22 @@ user-login = "mbrubeck"
 user-name = "Matt Brubeck"
 
 [[publisher.syn]]
-version = "2.0.90"
-when = "2024-11-29"
+version = "2.0.91"
+when = "2024-12-22"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror]]
-version = "2.0.8"
-when = "2024-12-18"
+version = "2.0.9"
+when = "2024-12-21"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.thiserror-impl]]
-version = "2.0.8"
-when = "2024-12-18"
+version = "2.0.9"
+when = "2024-12-21"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
