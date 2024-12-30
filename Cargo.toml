@@ -31,6 +31,6 @@ toml = { version = "0.8.19", features = ["parse"] }
 url = "2.5.4"
 
 [dev-dependencies]
-fake = "3.0.1"
+fake = "3.1.0"
 proptest = "1.6.0"
 wiremock = "0.6.2"
