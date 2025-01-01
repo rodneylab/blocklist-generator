@@ -104,6 +104,11 @@ version = "1.2.5"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.6"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.core-foundation-sys]]
@@ -125,6 +130,11 @@ version = "2.10.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "3.0.1"
+
+[[audits.fake]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "3.1.0"
 
 [[audits.fastrand]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1002,6 +1012,12 @@ user-id = 3618 # David Tolnay (dtolnay)
 start = "2019-04-23"
 end = "2025-05-14"
 
+[[trusted.quote]]
+criteria = "safe-to-deploy"
+user-id = 3618 # David Tolnay (dtolnay)
+start = "2019-04-09"
+end = "2025-12-31"
+
 [[trusted.regex]]
 criteria = "safe-to-deploy"
 user-id = 189 # Andrew Gallant (BurntSushi)
@@ -1163,6 +1179,12 @@ criteria = "safe-to-deploy"
 user-id = 10
 start = "2019-04-27"
 end = "2025-06-01"
+
+[[trusted.tower]]
+criteria = "safe-to-deploy"
+user-id = 359 # Sean McArthur (seanmonstar)
+start = "2024-09-09"
+end = "2025-12-31"
 
 [[trusted.tower-layer]]
 criteria = "safe-to-deploy"
