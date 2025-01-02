@@ -1,0 +1,34 @@
+---
+source: src/file_system.rs
+expression: outcome
+snapshot_kind: text
+---
+{
+  "blocklists": {
+    "hosts_file_blocklist_urls": [
+      "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0",
+      "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
+      "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+      "https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts"
+    ],
+    "domain_blocklist_urls": [
+      "https://quidsup.net/notrack/blocklist.php?download=annoyancedomains",
+      "https://quidsup.net/notrack/blocklist.php?download=malwaredomains",
+      "https://quidsup.net/notrack/blocklist.php?download=trackersdomains",
+      "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+      "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt",
+      "https://v.firebog.net/hosts/AdguardDNS.txt",
+      "https://v.firebog.net/hosts/Easyprivacy.txt"
+    ]
+  },
+  "filters": {
+    "allowed_names": [
+      "0.0.0.0",
+      "127.0.0.1",
+      "255.255.255.255",
+      "example.com",
+      "another.example.com"
+    ],
+    "blocked_names": null
+  }
+}

@@ -2,20 +2,22 @@
 
 mod fetch;
 mod file_system;
+mod filter;
 mod parse;
 
 use std::{collections::HashSet, path::PathBuf};
 
 use ahash::RandomState;
 use clap::Parser;
+use filter::filter_blocklist;
 use log::warn;
 use num_format::{Locale, ToFormattedString};
 use url::Host;
 
 use fetch::Client as FetchClient;
 use file_system::{
-    get_blocklists_from_config_file, get_custom_blocked_names, write_blocklist_rpz_file,
-    write_domain_blocklist_file, write_unbound_local_zone_file, Blocklists,
+    get_config_from_file, get_custom_blocked_names, write_blocklist_rpz_file,
+    write_domain_blocklist_file, write_unbound_local_zone_file, Blocklists, Config,
 };
 
 #[derive(Parser)]
@@ -82,7 +84,10 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     };
     let concurrent_downloads = &cli.max_concurrent_downloads.unwrap_or(3);
 
-    let blocklists = get_blocklists_from_config_file(config_path);
+    let Config {
+        blocklists,
+        filters,
+    } = get_config_from_file(config_path)?;
     let sources = sources_from_blocklists(&blocklists);
 
     let fetch_client = FetchClient::default();
@@ -92,10 +97,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .domainlists(&sources, *concurrent_downloads, &mut set)
         .await?;
 
-    set.remove(&Host::parse("0.0.0.0").unwrap());
-    set.remove(&Host::parse("127.0.0.1").unwrap()); // DevSkim: ignore DS162092 - use of localhost IP is for removal from generated file, and not for accessing the localhost
-    set.remove(&Host::parse("255.255.255.255").unwrap());
-
+    if let Some(filters_value) = filters {
+        filter_blocklist(&mut set, &filters_value);
+    }
     get_custom_blocked_names("blocked-names.txt", &mut set);
 
     let mut result: Vec<Host> = set.into_iter().collect();

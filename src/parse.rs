@@ -1,4 +1,3 @@
-use ahash::RandomState;
 use log::trace;
 use nom::{
     branch::alt,
@@ -9,7 +8,6 @@ use nom::{
     sequence::{pair, tuple},
     IResult,
 };
-use std::collections::HashSet;
 use url::Host;
 
 fn is_digit(c: char) -> bool {
@@ -64,7 +62,7 @@ fn parse_hostfile_line(input: &str) -> Option<&str> {
     Some(hostname)
 }
 
-pub fn domainlist(file_body: &str, set: &mut HashSet<Host, RandomState>) {
+pub fn domainlist(file_body: &str, set: &mut std::collections::HashSet<Host, ahash::RandomState>) {
     for line in file_body.lines() {
         if let Some(value) = parse_domainlist_line(line) {
             if let Ok(host_value) = Host::parse(value) {
@@ -78,7 +76,7 @@ pub fn domainlist(file_body: &str, set: &mut HashSet<Host, RandomState>) {
     }
 }
 
-pub fn hostfile(file_body: &str, set: &mut HashSet<Host, RandomState>) {
+pub fn hostfile(file_body: &str, set: &mut std::collections::HashSet<Host, ahash::RandomState>) {
     for line in file_body.lines() {
         if let Some(value) = parse_hostfile_line(line) {
             if let Ok(host_value) = Host::parse(value) {
@@ -94,9 +92,6 @@ pub fn hostfile(file_body: &str, set: &mut HashSet<Host, RandomState>) {
 
 #[cfg(test)]
 mod tests {
-    use std::collections::HashSet;
-
-    use ahash::RandomState;
     use fake::{faker, Fake};
     use proptest::{prop_assert_eq, proptest, strategy::Strategy};
     use url::Host;
@@ -378,8 +373,9 @@ another-example.com # some annotation
 # more annotation
 subdomain-which-is-too-long-012345679012345678901234567890123456.com
 final-example.com";
-        let hasher = RandomState::new();
-        let mut hash_set: HashSet<Host, RandomState> = HashSet::with_hasher(hasher);
+        let hasher = ahash::RandomState::new();
+        let mut hash_set: std::collections::HashSet<Host, ahash::RandomState> =
+            std::collections::HashSet::with_hasher(hasher);
 
         // act
         domainlist(input, &mut hash_set);
@@ -396,8 +392,9 @@ final-example.com";
         // arrange
         let _ = env_logger::builder().is_test(true).try_init();
         let input = "127.0.0.1\texample.com\n0.0.0.0 another-example.com # some annotation\n\n# more annotation\n0.0.0.0\t\tsubdomain-which-is-too-long-012345679012345678901234567890123456.com\n0.0.0.0\tfinal-example.com";
-        let hasher = RandomState::new();
-        let mut hash_set: HashSet<Host, RandomState> = HashSet::with_hasher(hasher);
+        let hasher = ahash::RandomState::new();
+        let mut hash_set: std::collections::HashSet<Host, ahash::RandomState> =
+            std::collections::HashSet::with_hasher(hasher);
 
         // act
         hostfile(input, &mut hash_set);
