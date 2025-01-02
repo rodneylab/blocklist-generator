@@ -43,6 +43,18 @@ criteria = "safe-to-deploy"
 version = "1.1.2"
 criteria = "safe-to-deploy"
 
+[[exemptions.console]]
+version = "0.15.10"
+criteria = "safe-to-run"
+
+[[exemptions.crossbeam-deque]]
+version = "0.8.6"
+criteria = "safe-to-run"
+
+[[exemptions.crossbeam-utils]]
+version = "0.8.21"
+criteria = "safe-to-run"
+
 [[exemptions.deadpool]]
 version = "0.10.0"
 criteria = "safe-to-run"
@@ -58,6 +70,10 @@ criteria = "safe-to-run"
 [[exemptions.displaydoc]]
 version = "0.2.5"
 criteria = "safe-to-deploy"
+
+[[exemptions.encode_unicode]]
+version = "1.0.0"
+criteria = "safe-to-run"
 
 [[exemptions.futures-channel]]
 version = "0.3.31"
@@ -83,6 +99,10 @@ criteria = "safe-to-deploy"
 version = "0.31.1"
 criteria = "safe-to-deploy"
 
+[[exemptions.globwalk]]
+version = "0.9.1"
+criteria = "safe-to-run"
+
 [[exemptions.hermit-abi]]
 version = "0.3.9"
 criteria = "safe-to-run"
@@ -94,6 +114,10 @@ criteria = "safe-to-deploy"
 [[exemptions.humantime]]
 version = "2.1.0"
 criteria = "safe-to-deploy"
+
+[[exemptions.insta]]
+version = "1.41.1"
+criteria = "safe-to-run"
 
 [[exemptions.minimal-lexical]]
 version = "0.2.1"
