@@ -81,7 +81,7 @@ mod tests {
         let filters = Filters {
             allowed_names: Some(vec![
                 String::from("0.0.0.0"),
-                String::from("127.0.0.1"),
+                String::from("127.0.0.1"), // DevSkim: ignore DS162092 - use of local host IP is in test
                 String::from("255.255.255.255"),
             ]),
             blocked_names: None,
@@ -92,7 +92,7 @@ mod tests {
             std::collections::HashSet::with_hasher(hasher);
         set.insert(Host::parse("example.com").unwrap());
         set.insert(Host::parse("another.example.com").unwrap());
-        set.insert(Host::parse("127.0.0.1").unwrap());
+        set.insert(Host::parse("127.0.0.1").unwrap()); // DevSkim: ignore DS162092 - use of local host IP is in test
         set.insert(Host::parse("255.255.255.255").unwrap());
 
         // act
@@ -100,7 +100,8 @@ mod tests {
 
         // assert
         assert_eq!(set.len(), 2);
-        assert!(!set.contains(&Host::parse("127.0.0.1").unwrap(),));
+        assert!(!set.contains(&Host::parse("127.0.0.1").unwrap(),)); // DevSkim: ignore DS162092 - use of local host IP is in test
+
         assert!(set.contains(&Host::parse("example.com").unwrap(),));
         assert!(set.contains(&Host::parse("another.example.com").unwrap(),));
     }
@@ -111,7 +112,7 @@ mod tests {
         let filters = Filters {
             allowed_names: Some(vec![
                 String::from("0.0.0.0"),
-                String::from("127.0.0.1"),
+                String::from("127.0.0.1"), // DevSkim: ignore DS162092 - use of local host IP is in test
                 String::from("255.255.255.255"),
                 String::from("some.example.com"),
             ]),
@@ -123,7 +124,8 @@ mod tests {
             std::collections::HashSet::with_hasher(hasher);
         set.insert(Host::parse("example.com").unwrap());
         set.insert(Host::parse("another.example.com").unwrap());
-        set.insert(Host::parse("127.0.0.1").unwrap());
+        set.insert(Host::parse("127.0.0.1").unwrap()); // DevSkim: ignore DS162092 - use of local host IP is in test
+
         set.insert(Host::parse("255.255.255.255").unwrap());
 
         // act
@@ -131,7 +133,8 @@ mod tests {
 
         // assert
         assert_eq!(set.len(), 1);
-        assert!(!set.contains(&Host::parse("127.0.0.1").unwrap(),));
+        assert!(!set.contains(&Host::parse("127.0.0.1").unwrap(),)); // DevSkim: ignore DS162092 - use of local host IP is in test
+
         assert!(!set.contains(&Host::parse("example.com").unwrap(),));
         assert!(set.contains(&Host::parse("another.example.com").unwrap(),));
     }
@@ -142,7 +145,7 @@ mod tests {
         let filters = Filters {
             allowed_names: Some(vec![
                 String::from("0.0.0.0"),
-                String::from("127.0.0.1"),
+                String::from("127.0.0.1"), // DevSkim: ignore DS162092 - use of local host IP is in test
                 String::from("255.255.255.255"),
                 String::from("example.com"),
             ]),
@@ -154,7 +157,8 @@ mod tests {
             std::collections::HashSet::with_hasher(hasher);
         set.insert(Host::parse("example.com").unwrap());
         set.insert(Host::parse("some.example.com").unwrap());
-        set.insert(Host::parse("127.0.0.1").unwrap());
+        set.insert(Host::parse("127.0.0.1").unwrap()); // DevSkim: ignore DS162092 - use of local host IP is in test
+
         set.insert(Host::parse("255.255.255.255").unwrap());
 
         // act
@@ -162,7 +166,8 @@ mod tests {
 
         // assert
         assert_eq!(set.len(), 1);
-        assert!(!set.contains(&Host::parse("127.0.0.1").unwrap(),));
+        assert!(!set.contains(&Host::parse("127.0.0.1").unwrap(),)); // DevSkim: ignore DS162092 - use of local host IP is in test
+
         assert!(!set.contains(&Host::parse("example.com").unwrap(),));
         assert!(set.contains(&Host::parse("some.example.com").unwrap(),));
     }

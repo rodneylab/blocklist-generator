@@ -27,7 +27,8 @@ pub struct Blocklists {
 pub struct Filters {
     pub allowed_names: Option<Vec<String>>,
 
-    #[cfg_attr(not(test), expect(dead_code))]
+    // #[cfg_attr(not(test), expect(dead_code))]
+    #[cfg_attr(not(test), allow(dead_code))]
     pub blocked_names: Option<Vec<String>>,
 }
 
@@ -178,7 +179,7 @@ domain_blocklist_urls = [
 [filters]
 allowed_names = [
   "0.0.0.0",
-  "127.0.0.1",
+  "127.0.0.1", # DevSkim: ignore DS162092 - use of local host IP is in test
   "255.255.255.255",
   "example.com",
   "another.example.com",
