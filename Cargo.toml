@@ -13,6 +13,7 @@ description = "CLI utility for generating blocklist.rpz files for use with firew
 
 [dependencies]
 ahash = "0.8.11"
+anyhow = "1.0.95"
 askama = "0.12.1"
 clap = { version = "4.5.23", features = ["derive"] }
 clap-verbosity-flag = "3.0.2"
@@ -23,7 +24,7 @@ hyper = "1.5.2"
 log = "0.4.22"
 nom = "7.1.3"
 num-format = "0.4.4"
-reqwest = "0.12.11"
+reqwest = "0.12.12"
 serde = { version = "1.0.217", features = ["derive"] }
 thiserror = "2.0.9"
 tokio = { version = "1.42.0", features = ["full"] }
@@ -31,6 +32,8 @@ toml = { version = "0.8.19", features = ["parse"] }
 url = "2.5.4"
 
 [dev-dependencies]
+assert_fs = "1.1.2"
 fake = "3.1.0"
+insta = { version = "1.41.1", features = ["glob", "json"] }
 proptest = "1.6.0"
 wiremock = "0.6.2"

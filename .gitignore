@@ -4,3 +4,4 @@ blocklist.rpz
 zone-block-general.conf
 domain-blocklist.txt
 rusty-tags.vi
+/.cache

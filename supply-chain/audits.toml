@@ -522,6 +522,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.13.0"
 
+[[audits.similar]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "2.6.0"
+
 [[audits.subtle]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -748,6 +753,18 @@ user-id = 6743 # Ed Page (epage)
 start = "2023-03-08"
 end = "2025-05-14"
 
+[[trusted.anyhow]]
+criteria = "safe-to-deploy"
+user-id = 3618 # David Tolnay (dtolnay)
+start = "2019-10-05"
+end = "2026-01-02"
+
+[[trusted.assert_fs]]
+criteria = "safe-to-deploy"
+user-id = 6743 # Ed Page (epage)
+start = "2019-11-29"
+end = "2026-01-02"
+
 [[trusted.async-trait]]
 criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
@@ -856,6 +873,12 @@ user-id = 6825 # Dan Gohman (sunfishcode)
 start = "2023-08-29"
 end = "2025-06-18"
 
+[[trusted.globset]]
+criteria = "safe-to-deploy"
+user-id = 189 # Andrew Gallant (BurntSushi)
+start = "2019-04-15"
+end = "2026-01-02"
+
 [[trusted.h2]]
 criteria = "safe-to-deploy"
 user-id = 359 # Sean McArthur (seanmonstar)
@@ -909,6 +932,12 @@ criteria = "safe-to-deploy"
 user-id = 359 # Sean McArthur (seanmonstar)
 start = "2022-01-15"
 end = "2025-06-01"
+
+[[trusted.ignore]]
+criteria = "safe-to-deploy"
+user-id = 189 # Andrew Gallant (BurntSushi)
+start = "2019-04-15"
+end = "2026-01-02"
 
 [[trusted.indexmap]]
 criteria = "safe-to-deploy"
@@ -1005,6 +1034,24 @@ criteria = "safe-to-deploy"
 user-id = 2915 # Amanieu d'Antras (Amanieu)
 start = "2019-05-04"
 end = "2025-06-01"
+
+[[trusted.predicates]]
+criteria = "safe-to-deploy"
+user-id = 6743 # Ed Page (epage)
+start = "2019-04-22"
+end = "2026-01-02"
+
+[[trusted.predicates-core]]
+criteria = "safe-to-deploy"
+user-id = 6743 # Ed Page (epage)
+start = "2020-12-29"
+end = "2026-01-02"
+
+[[trusted.predicates-tree]]
+criteria = "safe-to-deploy"
+user-id = 6743 # Ed Page (epage)
+start = "2020-12-29"
+end = "2026-01-02"
 
 [[trusted.proc-macro2]]
 criteria = "safe-to-deploy"
@@ -1114,6 +1161,12 @@ user-id = 3618 # David Tolnay (dtolnay)
 start = "2019-03-01"
 end = "2025-06-01"
 
+[[trusted.termtree]]
+criteria = "safe-to-deploy"
+user-id = 6743 # Ed Page (epage)
+start = "2021-10-07"
+end = "2026-01-02"
+
 [[trusted.thiserror]]
 criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
@@ -1209,6 +1262,12 @@ criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
 start = "2021-10-02"
 end = "2025-09-13"
+
+[[trusted.walkdir]]
+criteria = "safe-to-deploy"
+user-id = 189 # Andrew Gallant (BurntSushi)
+start = "2019-06-09"
+end = "2026-01-02"
 
 [[trusted.want]]
 criteria = "safe-to-deploy"

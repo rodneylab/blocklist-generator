@@ -6,6 +6,7 @@ use std::{
 };
 
 use ahash::RandomState;
+use anyhow::Context;
 use askama::Template;
 use humansize::{format_size, DECIMAL};
 use log::{error, info};
@@ -14,25 +15,45 @@ use url::Host;
 
 use crate::parse::domainlist as parse_domainlist;
 
-#[derive(Deserialize)]
+#[derive(Debug, Deserialize)]
+#[cfg_attr(test, derive(serde::Serialize))]
 pub struct Blocklists {
     pub hosts_file_blocklist_urls: Vec<String>,
     pub domain_blocklist_urls: Vec<String>,
 }
 
-#[derive(Deserialize)]
-struct Config {
-    blocklists: Blocklists,
+#[derive(Debug, Deserialize)]
+#[cfg_attr(test, derive(serde::Serialize))]
+pub struct Filters {
+    pub allowed_names: Option<Vec<String>>,
+
+    // #[cfg_attr(not(test), expect(dead_code))]
+    #[cfg_attr(not(test), allow(dead_code))]
+    pub blocked_names: Option<Vec<String>>,
 }
 
-pub fn get_blocklists_from_config_file<P: AsRef<Path>>(config_file_path: P) -> Blocklists {
-    let config_file_content =
-        fs::read_to_string(config_file_path).expect("Unable to open or read config file");
-    let config: Config = toml::from_str(&config_file_content).expect("Unable to parse TOML config");
+#[derive(Debug, Deserialize)]
+#[cfg_attr(test, derive(serde::Serialize))]
+pub struct Config {
+    pub blocklists: Blocklists,
+    pub filters: Option<Filters>,
+}
 
-    let Config { blocklists } = config;
+pub fn get_config_from_file<P: AsRef<Path>>(config_file_path: P) -> anyhow::Result<Config> {
+    let config_file_content = fs::read_to_string(&config_file_path).with_context(|| {
+        format!(
+            "Failed to open or read config file `{}`",
+            config_file_path.as_ref().display()
+        )
+    })?;
 
-    blocklists
+    match toml::from_str(&config_file_content) {
+        Ok(value) => Ok(value),
+        Err(_) => anyhow::bail!(
+            "Failed to parse config file `{}`.  Check it is valid.",
+            config_file_path.as_ref().display()
+        ),
+    }
 }
 
 pub fn get_custom_blocked_names<P: AsRef<Path>>(
@@ -128,4 +149,132 @@ pub fn write_unbound_local_zone_file(blocklist_domains: &[Host]) {
         });
     write_to_file(&file_content, &output_path);
     print_output_file_metadata(&output_path);
+}
+
+#[cfg(test)]
+mod tests {
+    use assert_fs::fixture::{FileWriteStr, PathChild};
+
+    use crate::file_system::get_config_from_file;
+
+    #[test]
+    fn get_config_from_file_successfully_parses_valid_file() {
+        let config_content = r#"[blocklists]
+hosts_file_blocklist_urls = [
+  "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0",
+  "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
+  "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+  "https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts",
+]
+domain_blocklist_urls = [
+  "https://quidsup.net/notrack/blocklist.php?download=annoyancedomains",
+  "https://quidsup.net/notrack/blocklist.php?download=malwaredomains",
+  "https://quidsup.net/notrack/blocklist.php?download=trackersdomains",
+  "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+  "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt",
+  "https://v.firebog.net/hosts/AdguardDNS.txt",
+  "https://v.firebog.net/hosts/Easyprivacy.txt",
+]
+
+[filters]
+allowed_names = [
+  "0.0.0.0",
+  "127.0.0.1", # DevSkim: ignore DS162092 - use of local host IP is in test
+  "255.255.255.255",
+  "example.com",
+  "another.example.com",
+]
+"#;
+        let temp_dir = assert_fs::TempDir::new().unwrap();
+        let _ = temp_dir
+            .child("blocklist-generator.toml")
+            .write_str(config_content);
+        let config_path = temp_dir.join("blocklist-generator.toml");
+
+        // act
+        let outcome = get_config_from_file(config_path).unwrap();
+
+        // assert
+        insta::assert_json_snapshot!(outcome);
+    }
+
+    #[test]
+    fn get_config_from_file_returns_error_on_config_file_system_error() {
+        let temp_dir = assert_fs::TempDir::new().unwrap();
+        // file not created deliberately
+        let config_path = temp_dir.join("does-not-exist-generator.toml");
+
+        // act
+        let outcome = get_config_from_file(&config_path).unwrap_err();
+
+        // assert
+        assert_eq!(
+            format!("{outcome}"),
+            format!(
+                "Failed to open or read config file `{}`",
+                &config_path.display()
+            )
+        );
+        let mut chain = outcome.chain();
+        assert_eq!(
+            chain.next().map(|val| format!("{val}")),
+            Some(format!(
+                "Failed to open or read config file `{}`",
+                &config_path.display()
+            ))
+        );
+        assert_eq!(
+            chain.next().map(|val| format!("{val}")),
+            Some(String::from("No such file or directory (os error 2)"))
+        );
+        assert!(chain.next().is_none());
+    }
+
+    #[test]
+    fn get_config_from_file_returns_error_on_invalid_config_file() {
+        let config_content = r#"[blocklists]
+hosts_file_blocklist_urls = [
+  "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts;showintro=0",
+  "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
+  "https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt",
+  "https://reddestdream.github.io/Projects/MinimalHosts/etc/MinimalHostsBlocker/minimalhosts",
+]
+domain_blocklist_urls = [
+  "https://quidsup.net/notrack/blocklist.php?download=annoyancedomains",
+  "https://quidsup.net/notrack/blocklist.php?download=malwaredomains",
+  "https://quidsup.net/notrack/blocklist.php?download=trackersdomains",
+  "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
+  "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt",
+  "https://v.firebog.net/hosts/AdguardDNS.txt",
+  "https://v.firebog.net/hosts/Easyprivacy.txt",
+]
+
+[filter"#;
+        let temp_dir = assert_fs::TempDir::new().unwrap();
+        let _ = temp_dir
+            .child("blocklist-generator.toml")
+            .write_str(config_content);
+        let config_path = temp_dir.join("blocklist-generator.toml");
+
+        // act
+        let outcome = get_config_from_file(&config_path).unwrap_err();
+
+        // assert
+        assert_eq!(
+            format!("{outcome}"),
+            format!(
+                "Failed to parse config file `{}`.  Check it is valid.",
+                &config_path.display()
+            )
+        );
+        let mut chain = outcome.chain();
+        assert_eq!(
+            chain.next().map(|val| format!("{val}")),
+            Some(format!(
+                "Failed to parse config file `{}`.  Check it is valid.",
+                &config_path.display()
+            ))
+        );
+        assert!(chain.next().is_none());
+    }
 }
