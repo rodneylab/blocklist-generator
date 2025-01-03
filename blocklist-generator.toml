@@ -14,3 +14,12 @@ domain_blocklist_urls = [
   "https://v.firebog.net/hosts/AdguardDNS.txt",
   "https://v.firebog.net/hosts/Easyprivacy.txt",
 ]
+
+[filters]
+allowed_names = [
+  "0.0.0.0",
+  "127.0.0.1",
+  "255.255.255.255",
+  # "example.com",
+  # "another.example.com",
+]
