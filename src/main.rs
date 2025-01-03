@@ -9,7 +9,7 @@ use std::{collections::HashSet, path::PathBuf};
 
 use ahash::RandomState;
 use clap::Parser;
-use filter::filter_blocklist;
+use filter::blocklist as filter_blocklist;
 use log::warn;
 use num_format::{Locale, ToFormattedString};
 use url::Host;

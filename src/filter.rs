@@ -30,7 +30,7 @@ fn parent_domains(domain: &Host) -> Option<Vec<Host>> {
 /// Remove any allowlist members found in `blocklist`.  If the allowlist member is a subdomain, any
 /// occurrences of parent domain also get removed (`some.example.com` in allowlist results in
 /// `example.com` being removed from `blocklist`)
-pub fn filter_blocklist(
+pub fn blocklist(
     blocklist: &mut std::collections::HashSet<Host, ahash::RandomState>,
     filters: &Filters,
 ) {
@@ -71,7 +71,7 @@ pub fn filter_blocklist(
 mod tests {
     use url::Host;
 
-    use crate::{file_system::Filters, filter::filter_blocklist};
+    use crate::{file_system::Filters, filter::blocklist};
 
     use super::parent_domains;
 
@@ -96,7 +96,7 @@ mod tests {
         set.insert(Host::parse("255.255.255.255").unwrap());
 
         // act
-        filter_blocklist(&mut set, &filters);
+        blocklist(&mut set, &filters);
 
         // assert
         assert_eq!(set.len(), 2);
@@ -129,7 +129,7 @@ mod tests {
         set.insert(Host::parse("255.255.255.255").unwrap());
 
         // act
-        filter_blocklist(&mut set, &filters);
+        blocklist(&mut set, &filters);
 
         // assert
         assert_eq!(set.len(), 1);
@@ -162,7 +162,7 @@ mod tests {
         set.insert(Host::parse("255.255.255.255").unwrap());
 
         // act
-        filter_blocklist(&mut set, &filters);
+        blocklist(&mut set, &filters);
 
         // assert
         assert_eq!(set.len(), 1);

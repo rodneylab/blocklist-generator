@@ -28,7 +28,7 @@ pub enum AppError {
     FetchParse { url: String },
 
     #[error(
-        "Error fetching blocklist `{url}`: error requesting data.  The URL might be invalid,  or \
+        "Error fetching blocklist `{url}`: error requesting data.  The URL might be invalid, or \
             there might be a network issue."
     )]
     FetchRequest { url: String },
@@ -236,7 +236,7 @@ mod tests {
             format!("{outcome}"),
             format!(
                 "Error fetching blocklist `{mock_remote_uri}`.  Check the URL is correct and the \
-      connection  is up."
+      connection is up."
             )
         );
     }
