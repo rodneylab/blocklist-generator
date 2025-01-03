@@ -10,10 +10,16 @@ use url::Host;
 
 #[derive(thiserror::Error, Debug)]
 pub enum AppError {
-    #[error("Error fetching blocklist `{url}`: only received part of the file.  The network connection may be unstable.")]
+    #[error(
+        "Error fetching blocklist `{url}`: only received part of the file.  The network \
+        connection may be unstable."
+    )]
     IncompleteBody { url: String },
 
-    #[error("Error fetching blocklist `{url}`: no response data or incomplete data.  The network connection may be unstable.")]
+    #[error(
+        "Error fetching blocklist `{url}`: no response data or incomplete data.  The network \
+        connection may be unstable."
+    )]
     FetchBody { url: String },
 
     #[error(
@@ -21,7 +27,10 @@ pub enum AppError {
     )]
     FetchParse { url: String },
 
-    #[error("Error fetching blocklist `{url}`: error requesting data.  The URL might be invalid, or there might be a network issue.")]
+    #[error(
+        "Error fetching blocklist `{url}`: error requesting data.  The URL might be invalid,  or \
+            there might be a network issue."
+    )]
     FetchRequest { url: String },
 
     #[error(
@@ -93,7 +102,7 @@ impl Client {
         let mut result = HashSet::<Host, RandomState>::default();
         info!("Fetching domainlist (stream): {url}");
         let body = self.get_text_body(url).await?;
-        info!("Fetched {url}!");
+        info!("Fetched {url}.");
         parse_domainlist(&body, &mut result);
         Ok(result)
     }
@@ -199,7 +208,11 @@ mod tests {
             .unwrap_err();
 
         // assert
-        assert_eq!(format!("{outcome}"), "Error fetching blocklist `https://0.0.0.0/does-not-exist`: error requesting data.  The URL might be invalid, or there might be a network issue.");
+        assert_eq!(
+            format!("{outcome}"),
+            "Error fetching blocklist `https://0.0.0.0/does-not-exist`: error requesting data.  \
+                The URL might be invalid, or there might be a network issue."
+        );
     }
 
     #[tokio::test]
@@ -219,8 +232,13 @@ mod tests {
         let outcome = client.domainlist(&mock_remote_uri).await.unwrap_err();
 
         // assert
-        assert_eq!(format!("{outcome}"),
-  format!("Error fetching blocklist `{mock_remote_uri}`.  Check the URL is correct and the connection is up."));
+        assert_eq!(
+            format!("{outcome}"),
+            format!(
+                "Error fetching blocklist `{mock_remote_uri}`.  Check the URL is correct and the \
+      connection  is up."
+            )
+        );
     }
 
     #[tokio::test]
@@ -264,8 +282,13 @@ mod tests {
         let outcome = client.hostsfile(&mock_remote_uri).await.unwrap_err();
 
         // assert
-        assert_eq!(format!("{outcome}"),
-  format!("Error fetching blocklist `{mock_remote_uri}`.  Check the URL is correct and the connection is up."));
+        assert_eq!(
+            format!("{outcome}"),
+            format!(
+                "Error fetching blocklist `{mock_remote_uri}`.  Check the URL is correct and the \
+      connection is up."
+            )
+        );
     }
 
     #[tokio::test]

@@ -40,17 +40,24 @@ pub fn filter_blocklist(
                 Ok(value) => {
                     if let Some(parent_domain_values) = parent_domains(&value) {
                         for parent_name in parent_domain_values {
-                            blocklist.remove(&parent_name);
-                            log::info!(
-                                "Removing parent domain `{parent_name}` of allowed_names element: \
+                            if blocklist.remove(&parent_name) {
+                                log::info!(
+                                "Removed parent domain `{parent_name}` of allowed_names element: \
                                 `{name}` from generated blocklist."
                             );
+                            }
                         }
                     }
-                    blocklist.remove(&value);
-                    log::info!(
-                        "Removing allowed_names element: `{name}` from generated blocklist."
-                    );
+                    if blocklist.remove(&value) {
+                        log::info!(
+                            "Removed allowed_names element: `{name}` from generated blocklist."
+                        );
+                    } else {
+                        log::info!(
+                            "No exact matches for allowed_names element: `{name}` in generated \
+                            blocklist."
+                        );
+                    }
                 }
                 Err(_) => {
                     log::error!("Ignoring allowed_names element: `{name}`.  Check it is valid.");
