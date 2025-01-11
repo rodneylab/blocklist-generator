@@ -75,14 +75,6 @@ criteria = "safe-to-deploy"
 version = "1.0.0"
 criteria = "safe-to-run"
 
-[[exemptions.futures-channel]]
-version = "0.3.31"
-criteria = "safe-to-deploy"
-
-[[exemptions.futures-executor]]
-version = "0.3.31"
-criteria = "safe-to-deploy"
-
 [[exemptions.futures-task]]
 version = "0.3.31"
 criteria = "safe-to-deploy"
@@ -115,10 +107,6 @@ criteria = "safe-to-deploy"
 version = "2.1.0"
 criteria = "safe-to-deploy"
 
-[[exemptions.insta]]
-version = "1.41.1"
-criteria = "safe-to-run"
-
 [[exemptions.minimal-lexical]]
 version = "0.2.1"
 criteria = "safe-to-deploy"
@@ -145,10 +133,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.serde_urlencoded]]
 version = "0.7.1"
-criteria = "safe-to-deploy"
-
-[[exemptions.shlex]]
-version = "1.3.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.signal-hook-registry]]
