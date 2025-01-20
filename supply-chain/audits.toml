@@ -31,6 +31,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.6.0"
 
+[[audits.bitflags]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.7.0"
+
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -105,6 +110,11 @@ version = "1.2.5"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.2.6"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.2.9"
 
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -301,6 +311,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.4.22"
 
+[[audits.log]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.25"
+
 [[audits.mime_guess]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -310,6 +325,11 @@ version = "2.0.5"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.7.4"
+
+[[audits.miniz_oxide]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.8.3"
 
 [[audits.miniz_oxide]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -451,6 +471,11 @@ version = "0.23.19"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.20"
+
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.21"
 
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -691,6 +716,21 @@ version = "0.2.2"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.9.5"
+
+[[audits.wasm-bindgen-futures]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.50"
+
+[[audits.wasm-bindgen-macro]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.100"
+
+[[audits.web-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.77"
 
 [[audits.writeable]]
 who = "Rodney Lab <codesign@rodneylab.com>"
