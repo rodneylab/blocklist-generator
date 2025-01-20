@@ -107,6 +107,10 @@ criteria = "safe-to-deploy"
 version = "2.1.0"
 criteria = "safe-to-deploy"
 
+[[exemptions.js-sys]]
+version = "0.3.77"
+criteria = "safe-to-deploy"
+
 [[exemptions.minimal-lexical]]
 version = "0.2.1"
 criteria = "safe-to-deploy"
@@ -154,6 +158,10 @@ criteria = "safe-to-deploy"
 [[exemptions.unarray]]
 version = "0.1.4"
 criteria = "safe-to-run"
+
+[[exemptions.wasm-bindgen]]
+version = "0.2.100"
+criteria = "safe-to-deploy"
 
 [[exemptions.windows-registry]]
 version = "0.2.0"
