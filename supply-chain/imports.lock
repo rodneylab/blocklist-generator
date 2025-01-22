@@ -107,8 +107,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.clap]]
-version = "4.5.26"
-when = "2025-01-09"
+version = "4.5.27"
+when = "2025-01-20"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -121,8 +121,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_builder]]
-version = "4.5.26"
-when = "2025-01-09"
+version = "4.5.27"
+when = "2025-01-20"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -254,8 +254,8 @@ user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.indexmap]]
-version = "2.7.0"
-when = "2024-12-01"
+version = "2.7.1"
+when = "2025-01-20"
 user-id = 539
 user-login = "cuviper"
 user-name = "Josh Stone"
@@ -436,8 +436,8 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.serde_json]]
-version = "1.0.135"
-when = "2025-01-07"
+version = "1.0.137"
+when = "2025-01-19"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -648,6 +648,11 @@ criteria = "safe-to-deploy"
 delta = "0.9.15 -> 0.9.18"
 notes = "Nontrivial update but mostly around dependencies and how `unsafe` code is managed. Everything looks the same shape as before."
 
+[[audits.bytecode-alliance.audits.displaydoc]]
+who = "Nick Fitzgerald <fitzgen@gmail.com>"
+criteria = "safe-to-deploy"
+delta = "0.2.4 -> 0.2.5"
+
 [[audits.bytecode-alliance.audits.foreign-types]]
 who = "Pat Hickey <phickey@fastly.com>"
 criteria = "safe-to-deploy"
@@ -730,6 +735,12 @@ who = "Pat Hickey <phickey@fastly.com>"
 criteria = "safe-to-deploy"
 version = "0.2.15"
 notes = "no build.rs, no macros, no unsafe. It reads the filesystem and makes copies of DLLs into OUT_DIR."
+
+[[audits.bytecode-alliance.audits.yoke]]
+who = "Nick Fitzgerald <fitzgen@gmail.com>"
+criteria = "safe-to-deploy"
+delta = "0.7.4 -> 0.7.5"
+notes = "Good safety comments."
 
 [[audits.embark-studios.audits.assert-json-diff]]
 who = "Johan Andersson <opensource@embark-studios.com>"
@@ -1098,6 +1109,23 @@ delta = "0.9.3 -> 0.9.4"
 notes = "I've reviewed every source contribution that was neither authored nor reviewed by Mozilla."
 aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
 
+[[audits.mozilla.audits.displaydoc]]
+who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
+criteria = "safe-to-deploy"
+version = "0.2.3"
+notes = """
+This crate is convenient macros to implement core::fmt::Display trait.
+Although `unsafe` is used for test code to call `libc::abort()`, it has no `unsafe` code in this crate. And there is no file access.
+It meets the criteria for safe-to-deploy.
+"""
+aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.displaydoc]]
+who = "Mike Hommey <mh+mozilla@glandium.org>"
+criteria = "safe-to-deploy"
+delta = "0.2.3 -> 0.2.4"
+aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
+
 [[audits.mozilla.audits.doc-comment]]
 who = "Nika Layzell <nika@thelayzells.com>"
 criteria = "safe-to-deploy"
@@ -1335,6 +1363,25 @@ aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-ch
 who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
 criteria = "safe-to-deploy"
 delta = "0.5.2 -> 0.5.4"
+aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.yoke]]
+who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
+criteria = "safe-to-deploy"
+version = "0.7.1"
+notes = "This crate is for zero-copy serialization for ICU4X data structure, and maintained by ICU4X team. Since this uses unsafe block for serialization, I audited code."
+aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.yoke]]
+who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
+criteria = "safe-to-deploy"
+delta = "0.7.1 -> 0.7.3"
+aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.yoke]]
+who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
+criteria = "safe-to-deploy"
+delta = "0.7.3 -> 0.7.4"
 aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
 
 [[audits.mozilla.audits.zeroize]]
