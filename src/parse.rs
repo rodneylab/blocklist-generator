@@ -5,8 +5,8 @@ use nom::{
     character::complete::{alphanumeric1, multispace1},
     combinator::{recognize, verify},
     multi::{many0_count, many1_count},
-    sequence::{pair, tuple},
-    IResult,
+    sequence::pair,
+    IResult, Parser,
 };
 use url::Host;
 
@@ -17,21 +17,24 @@ fn is_digit(c: char) -> bool {
 fn parse_ipv4_octet(input: &str) -> IResult<&str, &str> {
     verify(take_while_m_n(1, 3, is_digit), |val: &str| {
         val.parse::<u8>().is_ok()
-    })(input)
+    })
+    .parse(input)
 }
 
 fn parse_hostname_element(input: &str) -> IResult<&str, &str> {
     verify(
         recognize(many1_count(alt((alphanumeric1, tag("-"), tag("_"))))),
         |val: &str| val.len() <= 63,
-    )(input)
+    )
+    .parse(input)
 }
 
 fn parse_hostname(input: &str) -> IResult<&str, &str> {
-    recognize(tuple((
+    recognize((
         recognize(many1_count(pair(parse_hostname_element, tag(".")))),
         parse_hostname_element,
-    )))(input)
+    ))
+    .parse(input)
 }
 
 fn parse_ipv4_address(input: &str) -> IResult<&str, &str> {
@@ -41,7 +44,8 @@ fn parse_ipv4_address(input: &str) -> IResult<&str, &str> {
             |val: &usize| *val <= 3,
         ),
         parse_ipv4_octet,
-    ))(input)
+    ))
+    .parse(input)
 }
 
 fn parse_domainlist_line(input: &str) -> Option<&str> {
@@ -55,7 +59,7 @@ fn parse_domainlist_line(input: &str) -> Option<&str> {
 fn parse_hostfile_line(input: &str) -> Option<&str> {
     // expect "127.0.0.1 example.com"
     let Ok((_rest, (_ipv4_address, _, hostname))) =
-        tuple((parse_ipv4_address, multispace1, parse_hostname))(input)
+        (parse_ipv4_address, multispace1, parse_hostname).parse(input)
     else {
         return None;
     };
