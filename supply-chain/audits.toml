@@ -129,6 +129,11 @@ version = "1.2.10"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.11"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.cc]]
@@ -276,6 +281,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "1.42.0"
 
+[[audits.insta]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "1.42.1"
+
 [[audits.ipnet]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -365,6 +375,11 @@ notes = " Add any notes about your audit below this line:"
 [[audits.native-tls]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.2.13"
+
+[[audits.native-tls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.2.11 -> 0.2.12"
 
 [[audits.object]]
@@ -416,6 +431,21 @@ version = "0.10.68"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.9.104"
+
+[[audits.openssl-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.9.105"
+
+[[audits.pin-project]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "1.1.9"
+
+[[audits.pin-project-internal]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "1.1.9"
 
 [[audits.pin-project-lite]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -492,6 +522,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.21"
 
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.22"
+
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -511,6 +546,11 @@ version = "1.10.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.10.1"
+
+[[audits.rustls-pki-types]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.11.0"
 
 [[audits.rustls-webpki]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -646,6 +686,11 @@ version = "3.14.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "3.15.0"
+
+[[audits.tempfile]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "3.16.0"
 
 [[audits.tinyvec]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1108,6 +1153,12 @@ user-id = 359 # Sean McArthur (seanmonstar)
 start = "2019-06-10"
 end = "2025-06-01"
 
+[[trusted.openssl-probe]]
+criteria = "safe-to-deploy"
+user-id = 1 # Alex Crichton (alexcrichton)
+start = "2020-08-04"
+end = "2026-01-29"
+
 [[trusted.parking_lot]]
 criteria = "safe-to-deploy"
 user-id = 2915 # Amanieu d'Antras (Amanieu)
@@ -1347,6 +1398,12 @@ criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
 start = "2021-10-02"
 end = "2025-09-13"
+
+[[trusted.wait-timeout]]
+criteria = "safe-to-deploy"
+user-id = 1 # Alex Crichton (alexcrichton)
+start = "2025-02-03"
+end = "2026-02-04"
 
 [[trusted.walkdir]]
 criteria = "safe-to-deploy"
