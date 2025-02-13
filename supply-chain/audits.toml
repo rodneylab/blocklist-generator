@@ -134,6 +134,11 @@ version = "1.2.11"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.13"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.cc]]
@@ -359,6 +364,11 @@ version = "0.8.3"
 [[audits.miniz_oxide]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.8.4"
+
+[[audits.miniz_oxide]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.7.2 -> 0.7.3"
 
 [[audits.mio]]
@@ -421,6 +431,11 @@ version = "0.36.7"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "0.32.2 -> 0.35.0"
+
+[[audits.once_cell]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.20.3"
 
 [[audits.openssl]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -526,6 +541,11 @@ version = "0.23.21"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.22"
+
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.23"
 
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
