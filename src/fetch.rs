@@ -75,7 +75,7 @@ impl Client {
                 }
             } else {
                 return AppError::FetchBody { url: url.into() };
-            };
+            }
         }
         if error.is_request() {
             return AppError::FetchRequest { url: url.into() };
