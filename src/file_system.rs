@@ -69,7 +69,7 @@ pub fn get_custom_blocked_names<P: AsRef<Path>>(
     };
     if let Some(value) = blocked_names_content {
         parse_domainlist(&value, set);
-    };
+    }
 }
 
 #[derive(Template)]
