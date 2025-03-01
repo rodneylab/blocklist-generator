@@ -44,8 +44,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.anyhow]]
-version = "1.0.95"
-when = "2024-12-22"
+version = "1.0.96"
+when = "2025-02-20"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -107,8 +107,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.clap]]
-version = "4.5.30"
-when = "2025-02-17"
+version = "4.5.31"
+when = "2025-02-24"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -121,8 +121,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_builder]]
-version = "4.5.30"
-when = "2025-02-17"
+version = "4.5.31"
+when = "2025-02-24"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -184,8 +184,8 @@ user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.h2]]
-version = "0.4.7"
-when = "2024-11-19"
+version = "0.4.8"
+when = "2025-02-18"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -429,22 +429,22 @@ user-login = "Amanieu"
 user-name = "Amanieu d'Antras"
 
 [[publisher.serde]]
-version = "1.0.217"
-when = "2024-12-27"
+version = "1.0.218"
+when = "2025-02-20"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.serde_derive]]
-version = "1.0.217"
-when = "2024-12-27"
+version = "1.0.218"
+when = "2025-02-20"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.serde_json]]
-version = "1.0.138"
-when = "2025-01-28"
+version = "1.0.139"
+when = "2025-02-20"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -562,8 +562,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.unicode-ident]]
-version = "1.0.16"
-when = "2025-01-28"
+version = "1.0.17"
+when = "2025-02-19"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -646,8 +646,8 @@ user-login = "kennykerr"
 user-name = "Kenny Kerr"
 
 [[publisher.winnow]]
-version = "0.7.2"
-when = "2025-02-10"
+version = "0.7.3"
+when = "2025-02-19"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"

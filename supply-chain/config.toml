@@ -139,10 +139,6 @@ criteria = "safe-to-run"
 version = "0.3.0"
 criteria = "safe-to-run"
 
-[[exemptions.ring]]
-version = "0.17.9"
-criteria = "safe-to-deploy"
-
 [[exemptions.serde_urlencoded]]
 version = "0.7.1"
 criteria = "safe-to-deploy"
@@ -217,8 +213,4 @@ criteria = "safe-to-deploy"
 
 [[exemptions.wiremock]]
 version = "0.6.2"
-criteria = "safe-to-run"
-
-[[exemptions.zerocopy]]
-version = "0.8.18"
 criteria = "safe-to-run"
