@@ -144,6 +144,11 @@ version = "1.2.14"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.15"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.cc]]
@@ -334,6 +339,11 @@ version = "0.2.169"
 [[audits.libc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.2.170"
+
+[[audits.libc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.2.154 -> 0.2.155"
 
 [[audits.libm]]
@@ -361,6 +371,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.4.25"
 
+[[audits.log]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.26"
+
 [[audits.mime_guess]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -384,6 +399,11 @@ version = "0.8.4"
 [[audits.miniz_oxide]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.8.5"
+
+[[audits.miniz_oxide]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.7.2 -> 0.7.3"
 
 [[audits.mio]]
@@ -401,6 +421,11 @@ notes = " Add any notes about your audit below this line:"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.13"
+
+[[audits.native-tls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.14"
 
 [[audits.native-tls]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -517,10 +542,25 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "0.9.1"
 
+[[audits.rand_core]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "0.9.2"
+
 [[audits.redox_syscall]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.5.8"
+
+[[audits.redox_syscall]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.5.9"
+
+[[audits.ring]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.17.11"
 
 [[audits.rustls]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -862,6 +902,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.7.35"
 
+[[audits.zerocopy]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "0.8.20"
+
 [[audits.zerocopy-derive]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -871,6 +916,11 @@ version = "0.7.35"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "0.8.18"
+
+[[audits.zerocopy-derive]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "0.8.20"
 
 [[audits.zerofrom]]
 who = "Rodney Lab <codesign@rodneylab.com>"

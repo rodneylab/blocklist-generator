@@ -75,7 +75,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        msrv: ["1.74.0"]
+        msrv: ["1.80.0"]
     name: ubuntu / ${{ matrix.msrv }}
     steps:
       - name: Harden Runner
