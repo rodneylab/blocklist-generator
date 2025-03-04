@@ -5,7 +5,7 @@ authors = ["Rodney Johnson <ask@rodneylab.com>"]
 edition = "2021"
 license = "BSD-3-Clause"
 repository = "https://github.com/rodneylab/blocklist-generator"
-# reqwest v0.12.12 MSRV is 1.80
+# wiremock v0.6.3 MSRV is 1.81
 rust-version = "1.74"
 description = "CLI utility for generating blocklist.rpz files for use with firewalls"
 
