@@ -44,7 +44,7 @@ version = "1.1.2"
 criteria = "safe-to-deploy"
 
 [[exemptions.console]]
-version = "0.15.10"
+version = "0.15.11"
 criteria = "safe-to-run"
 
 [[exemptions.crossbeam-deque]]
@@ -211,6 +211,10 @@ criteria = "safe-to-deploy"
 version = "0.52.6"
 criteria = "safe-to-deploy"
 
-[[exemptions.wiremock]]
-version = "0.6.2"
+[[exemptions.zerocopy]]
+version = "0.8.21"
+criteria = "safe-to-run"
+
+[[exemptions.zerocopy-derive]]
+version = "0.8.21"
 criteria = "safe-to-run"

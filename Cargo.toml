@@ -5,7 +5,7 @@ authors = ["Rodney Johnson <ask@rodneylab.com>"]
 edition = "2021"
 license = "BSD-3-Clause"
 repository = "https://github.com/rodneylab/blocklist-generator"
-# reqwest v0.12.12 MSRV is 1.80
+# wiremock v0.6.3 MSRV is 1.81
 rust-version = "1.74"
 description = "CLI utility for generating blocklist.rpz files for use with firewalls"
 
@@ -13,7 +13,7 @@ description = "CLI utility for generating blocklist.rpz files for use with firew
 
 [dependencies]
 ahash = "0.8.11"
-anyhow = "1.0.96"
+anyhow = "1.0.97"
 askama = "0.12.1"
 clap = { version = "4.5.31", features = ["derive"] }
 clap-verbosity-flag = "3.0.2"
@@ -26,7 +26,7 @@ nom = "8.0.0"
 num-format = "0.4.4"
 reqwest = "0.12.12"
 serde = { version = "1.0.218", features = ["derive"] }
-thiserror = "2.0.11"
+thiserror = "2.0.12"
 tokio = { version = "1.43.0", features = ["full"] }
 toml = { version = "0.8.20", features = ["parse"] }
 url = "2.5.4"
@@ -34,6 +34,6 @@ url = "2.5.4"
 [dev-dependencies]
 assert_fs = "1.1.2"
 fake = "4.0.0"
-insta = { version = "1.42.1", features = ["glob", "json"] }
+insta = { version = "1.42.2", features = ["glob", "json"] }
 proptest = "1.6.0"
 wiremock = "0.6.3"
