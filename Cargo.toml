@@ -25,7 +25,7 @@ log = "0.4.26"
 nom = "8.0.0"
 num-format = "0.4.4"
 reqwest = "0.12.12"
-serde = { version = "1.0.218", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
 thiserror = "2.0.12"
 tokio = { version = "1.43.0", features = ["full"] }
 toml = { version = "0.8.20", features = ["parse"] }
