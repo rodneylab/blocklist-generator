@@ -562,6 +562,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "0.2.20"
 
+[[audits.ppv-lite86]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "0.2.21"
+
 [[audits.proptest]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
@@ -832,6 +837,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "3.16.0"
 
+[[audits.tempfile]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "3.18.0"
+
 [[audits.tinyvec]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -966,6 +976,11 @@ version = "0.7.35"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "0.8.20"
+
+[[audits.zerocopy]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "0.8.23"
 
 [[audits.zerocopy-derive]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1261,6 +1276,18 @@ criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
 start = "2019-05-02"
 end = "2025-11-23"
+
+[[trusted.jiff]]
+criteria = "safe-to-deploy"
+user-id = 189 # Andrew Gallant (BurntSushi)
+start = "2024-02-17"
+end = "2026-03-11"
+
+[[trusted.jiff-static]]
+criteria = "safe-to-deploy"
+user-id = 189 # Andrew Gallant (BurntSushi)
+start = "2025-03-06"
+end = "2026-03-11"
 
 [[trusted.js-sys]]
 criteria = "safe-to-deploy"
