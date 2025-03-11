@@ -92,23 +92,16 @@ user-id = 696
 user-login = "fitzgen"
 user-name = "Nick Fitzgerald"
 
-[[publisher.byteorder]]
-version = "1.5.0"
-when = "2023-10-06"
-user-id = 189
-user-login = "BurntSushi"
-user-name = "Andrew Gallant"
-
 [[publisher.bytes]]
-version = "1.10.0"
-when = "2025-02-03"
+version = "1.10.1"
+when = "2025-03-05"
 user-id = 6741
 user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.clap]]
-version = "4.5.31"
-when = "2025-02-24"
+version = "4.5.32"
+when = "2025-03-10"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -121,15 +114,15 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_builder]]
-version = "4.5.31"
-when = "2025-02-24"
+version = "4.5.32"
+when = "2025-03-10"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_derive]]
-version = "4.5.28"
-when = "2025-02-03"
+version = "4.5.32"
+when = "2025-03-10"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -170,8 +163,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.env_logger]]
-version = "0.11.6"
-when = "2024-12-20"
+version = "0.11.7"
+when = "2025-03-10"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -254,8 +247,8 @@ user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.indexmap]]
-version = "2.7.1"
-when = "2025-01-20"
+version = "2.8.0"
+when = "2025-03-10"
 user-id = 539
 user-login = "cuviper"
 user-name = "Josh Stone"
@@ -274,6 +267,20 @@ user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
+[[publisher.jiff]]
+version = "0.2.4"
+when = "2025-03-10"
+user-id = 189
+user-login = "BurntSushi"
+user-name = "Andrew Gallant"
+
+[[publisher.jiff-static]]
+version = "0.2.4"
+when = "2025-03-10"
+user-id = 189
+user-login = "BurntSushi"
+user-name = "Andrew Gallant"
+
 [[publisher.lazy_static]]
 version = "1.5.0"
 when = "2024-06-21"
@@ -282,8 +289,8 @@ user-login = "cuviper"
 user-name = "Josh Stone"
 
 [[publisher.linux-raw-sys]]
-version = "0.4.15"
-when = "2025-01-08"
+version = "0.9.2"
+when = "2025-03-06"
 user-id = 6825
 user-login = "sunfishcode"
 user-name = "Dan Gohman"
@@ -408,8 +415,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.rustix]]
-version = "0.38.44"
-when = "2025-01-21"
+version = "1.0.2"
+when = "2025-03-10"
 user-id = 6825
 user-login = "sunfishcode"
 user-name = "Dan Gohman"
@@ -429,15 +436,15 @@ user-login = "Amanieu"
 user-name = "Amanieu d'Antras"
 
 [[publisher.serde]]
-version = "1.0.218"
-when = "2025-02-20"
+version = "1.0.219"
+when = "2025-03-09"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.serde_derive]]
-version = "1.0.218"
-when = "2025-02-20"
+version = "1.0.219"
+when = "2025-03-09"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -471,8 +478,8 @@ user-login = "mbrubeck"
 user-name = "Matt Brubeck"
 
 [[publisher.syn]]
-version = "2.0.99"
-when = "2025-03-03"
+version = "2.0.100"
+when = "2025-03-09"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -499,8 +506,8 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.tokio]]
-version = "1.43.0"
-when = "2025-01-08"
+version = "1.44.0"
+when = "2025-03-07"
 user-id = 6741
 user-login = "Darksonn"
 user-name = "Alice Ryhl"
@@ -1006,6 +1013,11 @@ who = "David Cook <dcook@divviup.org>"
 criteria = "safe-to-deploy"
 delta = "0.21.2 -> 0.21.3"
 
+[[audits.isrg.audits.once_cell]]
+who = "J.C. Jones <jc@insufficient.coffee>"
+criteria = "safe-to-deploy"
+delta = "1.20.3 -> 1.21.0"
+
 [[audits.mozilla.wildcard-audits.core-foundation]]
 who = "Bobby Holley <bobbyholley@gmail.com>"
 criteria = "safe-to-deploy"
@@ -1116,6 +1128,17 @@ aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-ch
 who = "Valentin Gosu <valentin.gosu@gmail.com>"
 criteria = "safe-to-deploy"
 delta = "1.2.0 -> 1.2.1"
+aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
+
+[[audits.mozilla.audits.getrandom]]
+who = "Chris Martin <cmartin@mozilla.com>"
+criteria = "safe-to-deploy"
+delta = "0.2.15 -> 0.3.1"
+notes = """
+I've looked over all unsafe code, and it appears to be safe, fully initializing the rng buffers.
+In addition, I've checked Linux, Windows, Mac, and Android more thoroughly against API
+documentation.
+"""
 aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
 
 [[audits.mozilla.audits.icu_collections]]
