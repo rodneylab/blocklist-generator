@@ -33,7 +33,7 @@ url = "2.5.4"
 
 [dev-dependencies]
 assert_fs = "1.1.2"
-fake = "4.0.0"
+fake = "4.2.0"
 insta = { version = "1.42.2", features = ["glob", "json"] }
 proptest = "1.6.0"
 wiremock = "0.6.3"
