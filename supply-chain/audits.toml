@@ -26,6 +26,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.7.6"
 
+[[audits.askama]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.13.0"
+
+[[audits.askama_derive]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.13.0"
+
 [[audits.bitflags]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -296,6 +306,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "1.4.0 -> 1.5.0"
 
+[[audits.icu_locid_transform_data]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.5.1"
+
+[[audits.icu_normalizer_data]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.5.1"
+
 [[audits.icu_properties]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -440,6 +460,11 @@ version = "0.8.4"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.8.5"
+
+[[audits.miniz_oxide]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.8.7"
 
 [[audits.miniz_oxide]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -751,6 +776,11 @@ version = "0.102.8"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.103.0"
+
+[[audits.rustls-webpki]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.103.1"
 
 [[audits.rustversion]]
 who = "Rodney Lab <codesign@rodneylab.com>"
