@@ -159,6 +159,11 @@ version = "1.2.16"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.17"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.cc]]
@@ -205,6 +210,11 @@ version = "3.1.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "4.0.0"
+
+[[audits.fake]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "4.2.0"
 
 [[audits.fastrand]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -400,6 +410,11 @@ version = "0.4.25"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.4.26"
+
+[[audits.log]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.27"
 
 [[audits.mime_guess]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -867,6 +882,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "3.19.0"
 
+[[audits.tempfile]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "3.19.1"
+
 [[audits.tinyvec]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -976,6 +996,16 @@ version = "0.2.100"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.77"
+
+[[audits.windows-link]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+
+[[audits.windows-result]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.2"
 
 [[audits.windows_aarch64_gnullvm]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1363,7 +1393,7 @@ end = "2025-06-25"
 
 [[trusted.libc]]
 criteria = "safe-to-deploy"
-user-id = 51017
+user-id = 51017 # Yuki Okushi (JohnTitor)
 start = "2020-03-17"
 end = "2025-06-01"
 
