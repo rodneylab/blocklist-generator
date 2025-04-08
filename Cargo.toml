@@ -27,13 +27,13 @@ num-format = "0.4.4"
 reqwest = "0.12.15"
 serde = { version = "1.0.219", features = ["derive"] }
 thiserror = "2.0.12"
-tokio = { version = "1.44.1", features = ["full"] }
+tokio = { version = "1.44.2", features = ["full"] }
 toml = { version = "0.8.20", features = ["parse"] }
 url = "2.5.4"
 
 [dev-dependencies]
 assert_fs = "1.1.2"
-fake = "4.2.0"
+fake = "4.3.0"
 insta = { version = "1.42.2", features = ["glob", "json"] }
 proptest = "1.6.0"
 wiremock = "0.6.3"
