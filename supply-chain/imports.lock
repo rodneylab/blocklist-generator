@@ -44,8 +44,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.anyhow]]
-version = "1.0.97"
-when = "2025-03-03"
+version = "1.0.98"
+when = "2025-04-14"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -100,8 +100,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.clap]]
-version = "4.5.35"
-when = "2025-04-01"
+version = "4.5.36"
+when = "2025-04-11"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -114,8 +114,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_builder]]
-version = "4.5.35"
-when = "2025-04-01"
+version = "4.5.36"
+when = "2025-04-11"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -184,8 +184,8 @@ user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.h2]]
-version = "0.4.8"
-when = "2025-02-18"
+version = "0.4.9"
+when = "2025-04-14"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -275,15 +275,15 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.jiff]]
-version = "0.2.6"
-when = "2025-04-07"
+version = "0.2.8"
+when = "2025-04-13"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.jiff-static]]
-version = "0.2.6"
-when = "2025-04-07"
+version = "0.2.8"
+when = "2025-04-13"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
@@ -295,16 +295,9 @@ user-id = 539
 user-login = "cuviper"
 user-name = "Josh Stone"
 
-[[publisher.libc]]
-version = "0.2.153"
-when = "2024-01-31"
-user-id = 51017
-user-login = "JohnTitor"
-user-name = "Yuki Okushi"
-
 [[publisher.linux-raw-sys]]
-version = "0.9.3"
-when = "2025-03-14"
+version = "0.9.4"
+when = "2025-04-09"
 user-id = 6825
 user-login = "sunfishcode"
 user-name = "Dan Gohman"
@@ -754,26 +747,6 @@ criteria = "safe-to-deploy"
 delta = "0.4.1 -> 0.5.0"
 notes = "Minor changes for a `no_std` upgrade but otherwise everything looks as expected."
 
-[[audits.bytecode-alliance.audits.libc]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-delta = "0.2.153 -> 0.2.158"
-notes = "More platforms, more definitions, more headers, it's still just `libc`"
-
-[[audits.bytecode-alliance.audits.libc]]
-who = "Dan Gohman <dev@sunfishcode.online>"
-criteria = "safe-to-deploy"
-delta = "0.2.158 -> 0.2.161"
-
-[[audits.bytecode-alliance.audits.libc]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-delta = "0.2.161 -> 0.2.171"
-notes = """
-Lots of unsafe, but that's par for the course with libc, it's all FFI type
-definitions updates/adjustments/etc.
-"""
-
 [[audits.bytecode-alliance.audits.percent-encoding]]
 who = "Alex Crichton <alex@alexcrichton.com>"
 criteria = "safe-to-deploy"
@@ -850,41 +823,6 @@ who = "George Burgess IV <gbiv@google.com>"
 criteria = "safe-to-run"
 version = "0.5.3"
 aggregated-from = "https://chromium.googlesource.com/chromiumos/third_party/rust_crates/+/refs/heads/main/cargo-vet/audits.toml?format=TEXT"
-
-[[audits.google.audits.bstr]]
-who = "danakj <danakj@chromium.org>"
-criteria = "safe-to-deploy"
-version = "1.10.0"
-notes = """
-WARNING: This certification is a result of a **partial** audit.  The
-`unicode` feature has **not** been audited.  The unicode feature has
-soundness that depends on the correctness of regex automata that are
-shipped as binary blobs. They have not been reviewed here.Ability to
-track partial audits is tracked in
-https://github.com/mozilla/cargo-vet/issues/380.
-"""
-aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
-
-[[audits.google.audits.bstr]]
-who = "Adrian Taylor <adetaylor@chromium.org>"
-criteria = "safe-to-deploy"
-delta = "1.10.0 -> 1.11.0"
-notes = "Changes two unsafe blocks to use core::mem::align_of<usize> instead of core::mem::size_of<usize> which shouldn't differ on mainstream platforms."
-aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
-
-[[audits.google.audits.bstr]]
-who = "Lukasz Anforowicz <lukasza@chromium.org>"
-criteria = "safe-to-deploy"
-delta = "1.11.0 -> 1.11.1"
-notes = "This release just excludes Unicode data files from being published to crates.io"
-aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
-
-[[audits.google.audits.bstr]]
-who = "Dustin J. Mitchell <djmitche@chromium.org>"
-criteria = "safe-to-deploy"
-delta = "1.11.1 -> 1.11.3"
-notes = "No unsafe changes"
-aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
 
 [[audits.google.audits.cfg-if]]
 who = "George Burgess IV <gbiv@google.com>"
