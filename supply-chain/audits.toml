@@ -31,10 +31,20 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.13.0"
 
+[[audits.askama]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.13.1"
+
 [[audits.askama_derive]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.13.0"
+
+[[audits.askama_derive]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.13.1"
 
 [[audits.bitflags]]
 who = "Rodney Lab <codesign@rodneylab.com>"
