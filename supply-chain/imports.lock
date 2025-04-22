@@ -100,8 +100,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.clap]]
-version = "4.5.36"
-when = "2025-04-11"
+version = "4.5.37"
+when = "2025-04-18"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -114,8 +114,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_builder]]
-version = "4.5.36"
-when = "2025-04-11"
+version = "4.5.37"
+when = "2025-04-18"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -275,15 +275,15 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.jiff]]
-version = "0.2.8"
-when = "2025-04-13"
+version = "0.2.10"
+when = "2025-04-21"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.jiff-static]]
-version = "0.2.8"
-when = "2025-04-13"
+version = "0.2.10"
+when = "2025-04-21"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
@@ -380,8 +380,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.proc-macro2]]
-version = "1.0.94"
-when = "2025-03-03"
+version = "1.0.95"
+when = "2025-04-16"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
