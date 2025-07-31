@@ -47,7 +47,7 @@ struct Source<'a> {
     source_type: SourceType,
 }
 
-fn sources_from_blocklists(blocklists: &Blocklists) -> Vec<Source> {
+fn sources_from_blocklists(blocklists: &Blocklists) -> Vec<Source<'_>> {
     let mut result: Vec<Source> = Vec::new();
     let Blocklists {
         hosts_file_blocklist_urls,
