@@ -832,6 +832,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.5.10"
 
+[[audits.redox_syscall]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.5.17"
+
 [[audits.ring]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -921,6 +926,11 @@ version = "0.23.27"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.29"
+
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.31"
 
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1296,6 +1306,11 @@ version = "0.4.2"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.53.2"
+
+[[audits.windows-targets]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.53.3"
 
 [[audits.windows_aarch64_gnullvm]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1847,6 +1862,12 @@ user-id = 1 # Alex Crichton (alexcrichton)
 start = "2019-04-12"
 end = "2025-06-01"
 
+[[trusted.rustc-demangle]]
+criteria = "safe-to-deploy"
+user-id = 55123 # rust-lang-owner
+start = "2023-03-23"
+end = "2026-08-01"
+
 [[trusted.rustix]]
 criteria = "safe-to-deploy"
 user-id = 6825 # Dan Gohman (sunfishcode)
@@ -1947,7 +1968,7 @@ end = "2025-06-01"
 criteria = "safe-to-deploy"
 user-id = 6741 # Alice Ryhl (Darksonn)
 start = "2020-12-25"
-end = "2025-06-01"
+end = "2026-08-01"
 
 [[trusted.tokio-macros]]
 criteria = "safe-to-deploy"

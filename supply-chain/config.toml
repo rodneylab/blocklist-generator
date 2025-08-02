@@ -103,10 +103,6 @@ criteria = "safe-to-deploy"
 version = "0.2.4"
 criteria = "safe-to-deploy"
 
-[[exemptions.redox_syscall]]
-version = "0.5.15"
-criteria = "safe-to-deploy"
-
 [[exemptions.rustix]]
 version = "1.0.8"
 criteria = "safe-to-deploy"
@@ -117,10 +113,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.signal-hook-registry]]
 version = "1.4.5"
-criteria = "safe-to-deploy"
-
-[[exemptions.tokio]]
-version = "1.46.1"
 criteria = "safe-to-deploy"
 
 [[exemptions.unarray]]
