@@ -86,8 +86,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.clap]]
-version = "4.5.41"
-when = "2025-07-09"
+version = "4.5.42"
+when = "2025-07-30"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -100,8 +100,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.clap_builder]]
-version = "4.5.41"
-when = "2025-07-09"
+version = "4.5.42"
+when = "2025-07-30"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -412,6 +412,12 @@ user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
+[[publisher.rustc-demangle]]
+version = "0.1.26"
+when = "2025-07-27"
+user-id = 55123
+user-login = "rust-lang-owner"
+
 [[publisher.ryu]]
 version = "1.0.20"
 when = "2025-03-04"
@@ -462,13 +468,6 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.socket2]]
-version = "0.5.10"
-when = "2025-05-26"
-user-id = 6025
-user-login = "Thomasdezeeuw"
-user-name = "Thomas de Zeeuw"
-
-[[publisher.socket2]]
 version = "0.6.0"
 when = "2025-07-05"
 user-id = 6025
@@ -503,6 +502,13 @@ user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
 
+[[publisher.tokio]]
+version = "1.47.0"
+when = "2025-07-26"
+user-id = 6741
+user-login = "Darksonn"
+user-name = "Alice Ryhl"
+
 [[publisher.tokio-macros]]
 version = "2.5.0"
 when = "2025-01-08"
@@ -518,8 +524,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.toml]]
-version = "0.9.2"
-when = "2025-07-11"
+version = "0.9.4"
+when = "2025-07-30"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
