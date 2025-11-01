@@ -9,7 +9,7 @@ use crate::file_system::Filters;
 fn parent_domains(domain: &Host) -> Option<Vec<Host>> {
     if let Host::Domain(host_string) = domain {
         let mut result: Vec<Host> = Vec::new();
-        let mut sub_domain: String = host_string.to_string();
+        let mut sub_domain: String = host_string.clone();
         while let Some((_, parent_domain)) = sub_domain.split_once('.') {
             if parent_domain.find('.').is_some() {
                 result.push(Host::parse(parent_domain).unwrap());
