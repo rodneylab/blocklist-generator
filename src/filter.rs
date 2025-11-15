@@ -1,3 +1,5 @@
+#![deny(missing_docs)]
+
 use url::Host;
 
 use crate::file_system::Filters;
@@ -12,7 +14,7 @@ fn parent_domains(domain: &Host) -> Option<Vec<Host>> {
         let mut sub_domain: String = host_string.clone();
         while let Some((_, parent_domain)) = sub_domain.split_once('.') {
             if parent_domain.find('.').is_some() {
-                result.push(Host::parse(parent_domain).unwrap());
+                result.push(Host::parse(parent_domain).expect("Should be a valid domain"));
                 sub_domain = parent_domain.to_string();
             } else {
                 break;
