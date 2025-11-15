@@ -244,6 +244,11 @@ version = "1.2.44"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.46"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.cc]]
@@ -355,6 +360,11 @@ version = "2.3.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.1.4"
+
+[[audits.find-msvc-tools]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.5"
 
 [[audits.futures]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -555,6 +565,11 @@ version = "2.10.1"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.11.0"
+
+[[audits.iri-string]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.7.9"
 
 [[audits.is_ci]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -792,6 +807,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.9.109"
 
+[[audits.openssl-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.9.111"
+
 [[audits.pin-project]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
@@ -1026,6 +1046,11 @@ version = "0.23.32"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.34"
+
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.35"
 
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1497,6 +1522,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.1"
 
+[[audits.windows-registry]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.6.1"
+
 [[audits.windows-result]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1506,6 +1536,11 @@ version = "0.3.2"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.4"
+
+[[audits.windows-result]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.1"
 
 [[audits.windows-strings]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1823,7 +1858,7 @@ end = "2025-07-30"
 criteria = "safe-to-deploy"
 user-id = 6741 # Alice Ryhl (Darksonn)
 start = "2021-01-11"
-end = "2025-06-01"
+end = "2026-11-15"
 
 [[trusted.cc]]
 criteria = "safe-to-deploy"
@@ -1937,7 +1972,7 @@ end = "2025-06-01"
 criteria = "safe-to-deploy"
 user-id = 359 # Sean McArthur (seanmonstar)
 start = "2019-03-01"
-end = "2025-06-01"
+end = "2026-11-15"
 
 [[trusted.hyper-tls]]
 criteria = "safe-to-deploy"

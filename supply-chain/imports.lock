@@ -30,15 +30,15 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.anstyle-query]]
-version = "1.1.4"
-when = "2025-08-05"
+version = "1.1.5"
+when = "2025-11-13"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.anstyle-wincon]]
-version = "3.0.10"
-when = "2025-08-05"
+version = "3.0.11"
+when = "2025-11-13"
 user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
@@ -85,8 +85,8 @@ user-login = "fitzgen"
 user-name = "Nick Fitzgerald"
 
 [[publisher.bytes]]
-version = "1.10.1"
-when = "2025-03-05"
+version = "1.11.0"
+when = "2025-11-14"
 user-id = 6741
 user-login = "Darksonn"
 user-name = "Alice Ryhl"
@@ -209,6 +209,13 @@ user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
+[[publisher.hyper]]
+version = "1.8.1"
+when = "2025-11-13"
+user-id = 359
+user-login = "seanmonstar"
+user-name = "Sean McArthur"
+
 [[publisher.hyper-tls]]
 version = "0.6.0"
 when = "2023-11-27"
@@ -217,8 +224,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.hyper-util]]
-version = "0.1.17"
-when = "2025-09-15"
+version = "0.1.18"
+when = "2025-11-13"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -294,15 +301,15 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.jiff]]
-version = "0.2.15"
-when = "2025-06-13"
+version = "0.2.16"
+when = "2025-11-07"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.jiff-static]]
-version = "0.2.15"
-when = "2025-06-13"
+version = "0.2.16"
+when = "2025-11-07"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
@@ -433,8 +440,8 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.quote]]
-version = "1.0.41"
-when = "2025-09-29"
+version = "1.0.42"
+when = "2025-11-06"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -537,8 +544,8 @@ user-login = "Thomasdezeeuw"
 user-name = "Thomas de Zeeuw"
 
 [[publisher.syn]]
-version = "2.0.108"
-when = "2025-10-22"
+version = "2.0.110"
+when = "2025-11-10"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -586,8 +593,8 @@ user-login = "Darksonn"
 user-name = "Alice Ryhl"
 
 [[publisher.tokio-util]]
-version = "0.7.16"
-when = "2025-08-03"
+version = "0.7.17"
+when = "2025-11-02"
 user-id = 6741
 user-login = "Darksonn"
 user-name = "Alice Ryhl"
