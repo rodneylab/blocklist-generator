@@ -25,7 +25,7 @@ log = "0.4.28"
 miette = { version = "7.6.0", features = ["fancy"] }
 nom = "8.0.0"
 num-format = "0.4.4"
-reqwest = "0.12.24"
+reqwest = "0.12.25"
 serde = { version = "1.0.228", features = ["derive"] }
 thiserror = "2.0.17"
 tokio = { version = "1.48.0", features = ["full"] }
