@@ -89,9 +89,6 @@ pub fn hostfile(file_body: &str, set: &mut std::collections::HashSet<Host, ahash
             } else {
                 trace!("Unable to parse hostname in line `{value}`");
             }
-            // } else if !line.trim_start().is_empty() && line.trim_start()[0..1] != *"#" {
-            //     trace!("Unable to parse `{line}`");
-            // }
         } else if line.trim_start().starts_with('#') {
             log::trace!("Ignoring hostfile comment line: `{line}`");
         } else if !line.trim().is_empty() {

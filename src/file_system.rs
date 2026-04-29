@@ -153,9 +153,13 @@ pub fn write_unbound_local_zone_file(blocklist_domains: &[Host]) {
 
 #[cfg(test)]
 mod tests {
-    use assert_fs::fixture::{FileWriteStr, PathChild};
+    use std::collections::HashSet;
 
-    use crate::file_system::get_config_from_file;
+    use ahash::RandomState;
+    use assert_fs::fixture::{FileWriteStr, PathChild};
+    use url::Host;
+
+    use crate::file_system::{get_config_from_file, get_custom_blocked_names};
 
     #[test]
     fn get_config_from_file_successfully_parses_valid_file() {
@@ -276,5 +280,30 @@ domain_blocklist_urls = [
             ))
         );
         assert!(chain.next().is_none());
+    }
+
+    #[test]
+    fn get_custom_blocked_names_returns_expected_name_for_valid_input() {
+        let config_content = r"example.com
+# ignored-example.com
+another.example.com
+";
+        let temp_dir = assert_fs::TempDir::new().unwrap();
+        let _ = temp_dir
+            .child("blocked-names.txt")
+            .write_str(config_content);
+        let blocked_names_path = temp_dir.join("blocked-names.txt");
+        let hasher = RandomState::new();
+        let mut set: HashSet<Host, RandomState> = HashSet::with_hasher(hasher);
+
+        // act
+        get_custom_blocked_names(&blocked_names_path, &mut set);
+
+        // assert
+        assert_eq!(set.len(), 2);
+        let expected_host = Host::parse("example.com").unwrap();
+        assert!(set.contains(&expected_host));
+        let expected_host = Host::parse("another.example.com").unwrap();
+        assert!(set.contains(&expected_host));
     }
 }
