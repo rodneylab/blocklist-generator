@@ -8,7 +8,7 @@ use std::{
 use ahash::RandomState;
 use anyhow::Context;
 use askama::Template;
-use humansize::{format_size, DECIMAL};
+use humansize::{DECIMAL, format_size};
 use log::{error, info};
 use serde::Deserialize;
 use url::Host;
