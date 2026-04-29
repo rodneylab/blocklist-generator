@@ -64,7 +64,7 @@ pub fn get_custom_blocked_names<P: AsRef<Path>>(
     let blocked_names_content = if let Ok(value) = fs::read_to_string(blocked_names_path) {
         Some(value)
     } else {
-        info!("No custom blocked names file found at `{blocked_names_display_path}.",);
+        info!("No custom blocked names file found at `{blocked_names_display_path}.");
         None
     };
     if let Some(value) = blocked_names_content {
