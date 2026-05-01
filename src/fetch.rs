@@ -1,12 +1,14 @@
-use crate::{
-    parse::{domainlist as parse_domainlist, hostfile as parse_hostfile},
-    Source, SourceType,
-};
+use std::{collections::HashSet, error::Error};
+
 use ahash::RandomState;
 use futures::{Future, Stream, StreamExt};
 use log::info;
-use std::{collections::HashSet, error::Error};
 use url::Host;
+
+use crate::{
+    Source, SourceType,
+    parse::{domainlist as parse_domainlist, hostfile as parse_hostfile},
+};
 
 #[derive(thiserror::Error, Debug)]
 pub enum AppError {
@@ -22,9 +24,7 @@ pub enum AppError {
     )]
     FetchBody { url: String },
 
-    #[error(
-        "Error parsing fetched data for blocklist `{url}`.  It might be worth retrying later."
-    )]
+    #[error("Error parsing fetched data for blocklist `{url}`.  It might be worth retrying later.")]
     FetchParse { url: String },
 
     #[error(
@@ -37,6 +37,9 @@ pub enum AppError {
         "Error fetching blocklist `{url}`.  Check the URL is correct and the connection is up."
     )]
     Fetch { url: String },
+
+    #[error(transparent)]
+    Database(#[from] rusqlite::Error),
 }
 
 pub struct Client {
@@ -100,7 +103,7 @@ impl Client {
 
     pub async fn domainlist(&self, url: &str) -> Result<HashSet<Host, RandomState>, AppError> {
         let mut result = HashSet::<Host, RandomState>::default();
-        info!("Fetching domainlist (stream): {url}");
+        log::trace!("Fetching domainlist (stream): {url}");
         let body = self.get_text_body(url).await?;
         info!("Fetched {url}.");
         parse_domainlist(&body, &mut result);
@@ -111,8 +114,8 @@ impl Client {
         let mut result = HashSet::<Host, RandomState>::default();
         info!("Fetching domainlist (stream): {url}");
         let body = self.get_text_body(url).await?;
-        info!("Fetched {url}!");
         parse_hostfile(&body, &mut result);
+
         Ok(result)
     }
 
@@ -165,11 +168,11 @@ mod tests {
     use ahash::RandomState;
     use url::Host;
     use wiremock::{
-        matchers::{method, path},
         Mock, MockServer, ResponseTemplate,
+        matchers::{method, path},
     };
 
-    use crate::{fetch::Client, Source, SourceType};
+    use crate::{Source, SourceType, fetch::Client};
 
     #[tokio::test]
     async fn domainlist_contacts_remote_server() {

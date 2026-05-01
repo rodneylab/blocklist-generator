@@ -14,10 +14,12 @@ use log::warn;
 use num_format::{Locale, ToFormattedString};
 use url::Host;
 
-use fetch::Client as FetchClient;
-use file_system::{
-    get_config_from_file, get_custom_blocked_names, write_blocklist_rpz_file,
-    write_domain_blocklist_file, write_unbound_local_zone_file, Blocklists, Config,
+use crate::{
+    fetch::Client as FetchClient,
+    file_system::{
+        Blocklists, Config, get_config_from_file, get_custom_blocked_names,
+        write_blocklist_rpz_file, write_domain_blocklist_file, write_unbound_local_zone_file,
+    },
 };
 
 #[derive(Parser)]
