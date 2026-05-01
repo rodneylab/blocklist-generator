@@ -51,6 +51,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.14.0"
 
+[[audits.askama]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.15.6"
+
+[[audits.askama]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.16.0"
+
 [[audits.askama_derive]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -66,10 +76,30 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.14.0"
 
+[[audits.askama_derive]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.16.0"
+
+[[audits.askama_macros]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.16.0"
+
 [[audits.askama_parser]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.14.0"
+
+[[audits.askama_parser]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.15.6"
+
+[[audits.askama_parser]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.16.0"
 
 [[audits.autocfg]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -100,6 +130,11 @@ version = "2.9.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.10.0"
+
+[[audits.block-buffer]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.10.4"
 
 [[audits.bstr]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -249,6 +284,16 @@ version = "1.2.46"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.60"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.2.61"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.cc]]
@@ -261,10 +306,20 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 delta = "1.2.19 -> 1.2.22"
 
+[[audits.chrono]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.44"
+
 [[audits.core-foundation-sys]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.8.7"
+
+[[audits.crypto-common]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.7"
 
 [[audits.deadpool]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -290,6 +345,11 @@ version = "0.3.4"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.1.4"
+
+[[audits.env_logger]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.11.10"
 
 [[audits.equivalent]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -341,6 +401,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "4.4.0"
 
+[[audits.fake]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "5.1.0"
+
 [[audits.fastrand]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -356,6 +421,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.3.0"
 
+[[audits.fastrand]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "2.4.1"
+
 [[audits.find-msvc-tools]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -366,7 +436,27 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.1.5"
 
+[[audits.find-msvc-tools]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.9"
+
 [[audits.futures]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.31"
+
+[[audits.futures]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.32"
+
+[[audits.futures-channel]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.32"
+
+[[audits.futures-core]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.31"
@@ -374,9 +464,24 @@ version = "0.3.31"
 [[audits.futures-core]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.3.32"
+
+[[audits.futures-executor]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.32"
+
+[[audits.futures-io]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 version = "0.3.31"
 
 [[audits.futures-io]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.32"
+
+[[audits.futures-macro]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.31"
@@ -384,17 +489,37 @@ version = "0.3.31"
 [[audits.futures-macro]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
-version = "0.3.31"
+version = "0.3.32"
 
 [[audits.futures-sink]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.31"
 
+[[audits.futures-sink]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.32"
+
+[[audits.futures-task]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.32"
+
+[[audits.futures-util]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.32"
+
 [[audits.getrandom]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.16"
+
+[[audits.getrandom]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.17"
 
 [[audits.getrandom]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -440,6 +565,11 @@ version = "0.27.5"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.27.7"
+
+[[audits.hyper-rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.27.9"
 
 [[audits.icu_collections]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -531,6 +661,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.2.1"
 
+[[audits.idna_adapter]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.2.2"
+
 [[audits.insta]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
@@ -551,6 +686,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "1.43.2"
 
+[[audits.insta]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "1.47.2"
+
 [[audits.ipnet]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -566,6 +706,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.11.0"
 
+[[audits.ipnet]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.12.0"
+
 [[audits.iri-string]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -580,6 +725,11 @@ version = "1.2.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.82"
+
+[[audits.js-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.97"
 
 [[audits.libc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -812,6 +962,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.9.111"
 
+[[audits.owo-colors]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "4.3.0"
+
 [[audits.pin-project]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
@@ -852,6 +1007,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.32"
 
+[[audits.pkg-config]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.33"
+
+[[audits.postgres-types]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.11"
+
 [[audits.potential_utf]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -887,10 +1052,25 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "1.9.0"
 
+[[audits.proptest]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "1.11.0"
+
+[[audits.quinn-udp]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.5.14"
+
 [[audits.r-efi]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "5.3.0"
+
+[[audits.rand]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.9.4"
 
 [[audits.rand_chacha]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -911,6 +1091,11 @@ version = "0.9.2"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "0.9.3"
+
+[[audits.rand_core]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-run"
+version = "0.10.1"
 
 [[audits.rand_xorshift]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -956,6 +1141,16 @@ version = "0.17.14"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.1.25"
+
+[[audits.rustc-hash]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.1.2"
+
+[[audits.rustc_version]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.1"
 
 [[audits.rustls]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1052,6 +1247,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.23.35"
 
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.38"
+
+[[audits.rustls]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.23.40"
+
 [[audits.rustls-pemfile]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1086,6 +1291,16 @@ version = "1.12.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.13.0"
+
+[[audits.rustls-pki-types]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.14.0"
+
+[[audits.rustls-pki-types]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.14.1"
 
 [[audits.rustls-webpki]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1142,6 +1357,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.103.8"
 
+[[audits.rustls-webpki]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.103.13"
+
 [[audits.rustversion]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1182,6 +1402,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.1.28"
 
+[[audits.schannel]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.29"
+
 [[audits.security-framework]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1217,6 +1442,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.15.0"
 
+[[audits.security-framework-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "2.17.0"
+
 [[audits.serde_derive]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1242,10 +1472,20 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.15.1"
 
+[[audits.stringprep]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.5"
+
 [[audits.subtle]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "2.6.1"
+
+[[audits.supports-hyperlinks]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "3.2.0"
 
 [[audits.sync_wrapper]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1327,6 +1567,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "3.20.0"
 
+[[audits.terminal_size]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.4"
+
+[[audits.time-core]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.6"
+
 [[audits.tinyvec]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1336,6 +1586,16 @@ version = "1.6.1"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.8.0"
+
+[[audits.tinyvec]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.10.0"
+
+[[audits.tinyvec]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.11.0"
 
 [[audits.tinyvec_macros]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1367,6 +1627,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.26.4"
 
+[[audits.toml_edit]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.22.27"
+
 [[audits.tower-layer]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1381,6 +1646,11 @@ version = "0.3.3"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.1.41"
+
+[[audits.tracing]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.1.44"
 
 [[audits.tracing-core]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1427,6 +1697,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.2"
 
+[[audits.uuid]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.23.1"
+
 [[audits.version_check]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1452,6 +1727,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.4.55"
 
+[[audits.wasm-bindgen-futures]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.68"
+
+[[audits.wasm-bindgen-futures]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.70"
+
 [[audits.wasm-bindgen-macro]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1466,6 +1751,16 @@ version = "0.2.104"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.105"
+
+[[audits.wasm-bindgen-macro]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.118"
+
+[[audits.wasm-bindgen-macro]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.120"
 
 [[audits.wasm-bindgen-macro-support]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1482,6 +1777,16 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.105"
 
+[[audits.wasm-bindgen-shared]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.118"
+
+[[audits.wasm-bindgen-shared]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.120"
+
 [[audits.web-sys]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1497,10 +1802,25 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.82"
 
+[[audits.web-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.97"
+
+[[audits.webpki-root-certs]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.0.7"
+
 [[audits.winapi-util]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-run"
 version = "0.1.11"
+
+[[audits.windows-implement]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+delta = "0.52.0 -> 0.60.2"
 
 [[audits.windows-link]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1575,6 +1895,11 @@ version = "0.53.5"
 [[audits.windows_aarch64_gnullvm]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.42.2"
+
+[[audits.windows_aarch64_gnullvm]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 version = "0.53.0"
 
 [[audits.windows_aarch64_gnullvm]]
@@ -1585,6 +1910,11 @@ version = "0.53.1"
 [[audits.windows_aarch64_msvc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.42.2"
+
+[[audits.windows_aarch64_msvc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 version = "0.53.0"
 
 [[audits.windows_aarch64_msvc]]
@@ -1595,6 +1925,11 @@ version = "0.53.1"
 [[audits.windows_i686_gnu]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.42.2"
+
+[[audits.windows_i686_gnu]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 version = "0.53.0"
 
 [[audits.windows_i686_gnu]]
@@ -1611,6 +1946,11 @@ version = "0.53.0"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.53.1"
+
+[[audits.windows_i686_msvc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.42.2"
 
 [[audits.windows_i686_msvc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1625,12 +1965,22 @@ delta = "0.53.0 -> 0.53.1"
 [[audits.windows_x86_64_gnu]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.42.2"
+
+[[audits.windows_x86_64_gnu]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 version = "0.53.0"
 
 [[audits.windows_x86_64_gnu]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.53.1"
+
+[[audits.windows_x86_64_gnullvm]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.42.2"
 
 [[audits.windows_x86_64_gnullvm]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1720,6 +2070,11 @@ version = "0.1.6"
 [[audits.zerofrom]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "0.1.7"
+
+[[audits.zerofrom]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "0.1.2 -> 0.1.4"
 
 [[audits.zerofrom-derive]]
@@ -1792,7 +2147,7 @@ end = "2026-07-25"
 criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
 start = "2019-10-05"
-end = "2026-01-02"
+end = "2027-04-22"
 
 [[trusted.assert_fs]]
 criteria = "safe-to-deploy"
@@ -1820,7 +2175,7 @@ end = "2025-09-13"
 
 [[trusted.backtrace]]
 criteria = "safe-to-deploy"
-user-id = 2915 # Amanieu d'Antras (Amanieu)
+user-id = 2915
 start = "2023-06-29"
 end = "2025-06-01"
 
@@ -1862,7 +2217,7 @@ end = "2026-11-15"
 
 [[trusted.cc]]
 criteria = "safe-to-deploy"
-user-id = 2915 # Amanieu d'Antras (Amanieu)
+user-id = 2915
 start = "2024-02-20"
 end = "2025-06-01"
 
@@ -1896,6 +2251,12 @@ user-id = 6743 # Ed Page (epage)
 start = "2022-04-15"
 end = "2026-07-25"
 
+[[trusted.cmake]]
+criteria = "safe-to-deploy"
+user-id = 55123 # rust-lang-owner
+start = "2022-10-29"
+end = "2027-04-22"
+
 [[trusted.colorchoice]]
 criteria = "safe-to-deploy"
 user-id = 6743 # Ed Page (epage)
@@ -1906,19 +2267,31 @@ end = "2026-07-28"
 criteria = "safe-to-deploy"
 user-id = 6743 # Ed Page (epage)
 start = "2024-01-19"
-end = "2025-05-14"
+end = "2027-04-22"
 
 [[trusted.env_logger]]
 criteria = "safe-to-deploy"
 user-id = 6743 # Ed Page (epage)
 start = "2022-11-24"
-end = "2025-06-01"
+end = "2027-04-22"
 
 [[trusted.errno]]
 criteria = "safe-to-deploy"
 user-id = 6825 # Dan Gohman (sunfishcode)
 start = "2023-08-29"
 end = "2026-10-02"
+
+[[trusted.find-msvc-tools]]
+criteria = "safe-to-deploy"
+user-id = 539 # Josh Stone (cuviper)
+start = "2025-08-29"
+end = "2027-04-22"
+
+[[trusted.glob]]
+criteria = "safe-to-deploy"
+user-id = 55123 # rust-lang-owner
+start = "2023-01-06"
+end = "2027-05-01"
 
 [[trusted.globset]]
 criteria = "safe-to-deploy"
@@ -1934,7 +2307,7 @@ end = "2026-10-13"
 
 [[trusted.hashbrown]]
 criteria = "safe-to-deploy"
-user-id = 2915 # Amanieu d'Antras (Amanieu)
+user-id = 2915
 start = "2019-04-02"
 end = "2025-06-01"
 
@@ -1948,7 +2321,7 @@ end = "2026-07-25"
 criteria = "safe-to-deploy"
 user-id = 359 # Sean McArthur (seanmonstar)
 start = "2019-04-05"
-end = "2025-06-01"
+end = "2027-04-22"
 
 [[trusted.http-body]]
 criteria = "safe-to-deploy"
@@ -1986,6 +2359,12 @@ user-id = 359 # Sean McArthur (seanmonstar)
 start = "2022-01-15"
 end = "2026-07-25"
 
+[[trusted.icu_collections]]
+criteria = "safe-to-deploy"
+user-id = 1139 # Manish Goregaokar (Manishearth)
+start = "2022-09-27"
+end = "2027-05-01"
+
 [[trusted.icu_locale_core]]
 criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
@@ -2022,6 +2401,12 @@ user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2022-01-31"
 end = "2026-11-14"
 
+[[trusted.id-arena]]
+criteria = "safe-to-deploy"
+user-id = 696 # Nick Fitzgerald (fitzgen)
+start = "2026-01-14"
+end = "2027-04-29"
+
 [[trusted.ignore]]
 criteria = "safe-to-deploy"
 user-id = 189 # Andrew Gallant (BurntSushi)
@@ -2044,19 +2429,25 @@ end = "2026-11-14"
 criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
 start = "2019-05-02"
-end = "2025-11-23"
+end = "2027-04-22"
 
 [[trusted.jiff]]
 criteria = "safe-to-deploy"
 user-id = 189 # Andrew Gallant (BurntSushi)
 start = "2024-02-17"
-end = "2026-03-11"
+end = "2027-05-01"
 
 [[trusted.jiff-static]]
 criteria = "safe-to-deploy"
 user-id = 189 # Andrew Gallant (BurntSushi)
 start = "2025-03-06"
-end = "2026-03-11"
+end = "2027-04-30"
+
+[[trusted.jobserver]]
+criteria = "safe-to-deploy"
+user-id = 55123 # rust-lang-owner
+start = "2024-07-23"
+end = "2027-04-22"
 
 [[trusted.js-sys]]
 criteria = "safe-to-deploy"
@@ -2084,9 +2475,15 @@ end = "2026-07-30"
 
 [[trusted.libm]]
 criteria = "safe-to-deploy"
-user-id = 2915 # Amanieu d'Antras (Amanieu)
+user-id = 2915
 start = "2022-02-06"
 end = "2025-06-01"
+
+[[trusted.libm]]
+criteria = "safe-to-deploy"
+user-id = 55123 # rust-lang-owner
+start = "2024-10-26"
+end = "2027-04-22"
 
 [[trusted.linux-raw-sys]]
 criteria = "safe-to-deploy"
@@ -2102,7 +2499,7 @@ end = "2026-11-14"
 
 [[trusted.lock_api]]
 criteria = "safe-to-deploy"
-user-id = 2915 # Amanieu d'Antras (Amanieu)
+user-id = 2915
 start = "2019-05-04"
 end = "2025-06-01"
 
@@ -2156,13 +2553,13 @@ end = "2026-01-29"
 
 [[trusted.parking_lot]]
 criteria = "safe-to-deploy"
-user-id = 2915 # Amanieu d'Antras (Amanieu)
+user-id = 2915
 start = "2019-05-04"
 end = "2026-11-14"
 
 [[trusted.parking_lot_core]]
 criteria = "safe-to-deploy"
-user-id = 2915 # Amanieu d'Antras (Amanieu)
+user-id = 2915
 start = "2019-05-04"
 end = "2026-11-14"
 
@@ -2190,6 +2587,12 @@ user-id = 6743 # Ed Page (epage)
 start = "2020-12-29"
 end = "2026-01-02"
 
+[[trusted.prettyplease]]
+criteria = "safe-to-deploy"
+user-id = 3618 # David Tolnay (dtolnay)
+start = "2022-01-04"
+end = "2027-04-29"
+
 [[trusted.proc-macro2]]
 criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
@@ -2200,7 +2603,7 @@ end = "2026-10-14"
 criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
 start = "2019-04-09"
-end = "2025-12-31"
+end = "2027-04-22"
 
 [[trusted.regex]]
 criteria = "safe-to-deploy"
@@ -2250,11 +2653,23 @@ user-id = 3618 # David Tolnay (dtolnay)
 start = "2019-05-02"
 end = "2025-06-01"
 
+[[trusted.same-file]]
+criteria = "safe-to-deploy"
+user-id = 189 # Andrew Gallant (BurntSushi)
+start = "2019-07-16"
+end = "2026-12-30"
+
 [[trusted.scopeguard]]
 criteria = "safe-to-deploy"
-user-id = 2915 # Amanieu d'Antras (Amanieu)
+user-id = 2915
 start = "2020-02-16"
 end = "2025-05-14"
+
+[[trusted.semver]]
+criteria = "safe-to-deploy"
+user-id = 3618 # David Tolnay (dtolnay)
+start = "2021-05-25"
+end = "2027-04-29"
 
 [[trusted.serde]]
 criteria = "safe-to-deploy"
@@ -2278,7 +2693,7 @@ end = "2025-06-01"
 criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
 start = "2019-02-28"
-end = "2025-06-01"
+end = "2027-04-22"
 
 [[trusted.serde_spanned]]
 criteria = "safe-to-deploy"
@@ -2410,7 +2825,7 @@ end = "2025-06-01"
 criteria = "safe-to-deploy"
 user-id = 359 # Sean McArthur (seanmonstar)
 start = "2024-09-09"
-end = "2025-12-31"
+end = "2027-04-22"
 
 [[trusted.tower-http]]
 criteria = "safe-to-deploy"
@@ -2441,6 +2856,12 @@ criteria = "safe-to-deploy"
 user-id = 3618 # David Tolnay (dtolnay)
 start = "2021-10-02"
 end = "2026-11-14"
+
+[[trusted.url]]
+criteria = "safe-to-deploy"
+user-id = 1139 # Manish Goregaokar (Manishearth)
+start = "2021-02-18"
+end = "2027-04-22"
 
 [[trusted.wait-timeout]]
 criteria = "safe-to-deploy"
@@ -2538,6 +2959,24 @@ user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2021-05-01"
 end = "2026-11-14"
 
+[[trusted.yoke-derive]]
+criteria = "safe-to-deploy"
+user-id = 1139 # Manish Goregaokar (Manishearth)
+start = "2021-07-02"
+end = "2027-04-22"
+
+[[trusted.zerofrom]]
+criteria = "safe-to-deploy"
+user-id = 1139 # Manish Goregaokar (Manishearth)
+start = "2022-04-06"
+end = "2027-04-22"
+
+[[trusted.zerofrom-derive]]
+criteria = "safe-to-deploy"
+user-id = 1139 # Manish Goregaokar (Manishearth)
+start = "2022-04-06"
+end = "2027-04-22"
+
 [[trusted.zerotrie]]
 criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
@@ -2555,3 +2994,9 @@ criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2021-12-11"
 end = "2026-11-14"
+
+[[trusted.zmij]]
+criteria = "safe-to-deploy"
+user-id = 3618 # David Tolnay (dtolnay)
+start = "2025-12-18"
+end = "2027-04-22"

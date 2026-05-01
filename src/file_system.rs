@@ -8,7 +8,7 @@ use std::{
 use ahash::RandomState;
 use anyhow::Context;
 use askama::Template;
-use humansize::{format_size, DECIMAL};
+use humansize::{DECIMAL, format_size};
 use log::{error, info};
 use serde::Deserialize;
 use url::Host;
@@ -27,8 +27,7 @@ pub struct Blocklists {
 pub struct Filters {
     pub allowed_names: Option<Vec<String>>,
 
-    // #[cfg_attr(not(test), expect(dead_code))]
-    #[cfg_attr(not(test), allow(dead_code))]
+    #[cfg_attr(not(test), expect(dead_code))]
     pub blocked_names: Option<Vec<String>>,
 }
 
@@ -64,7 +63,7 @@ pub fn get_custom_blocked_names<P: AsRef<Path>>(
     let blocked_names_content = if let Ok(value) = fs::read_to_string(blocked_names_path) {
         Some(value)
     } else {
-        info!("No custom blocked names file found at `{blocked_names_display_path}.",);
+        log::info!("No custom blocked names file found at `{blocked_names_display_path}.");
         None
     };
     if let Some(value) = blocked_names_content {
@@ -153,9 +152,13 @@ pub fn write_unbound_local_zone_file(blocklist_domains: &[Host]) {
 
 #[cfg(test)]
 mod tests {
-    use assert_fs::fixture::{FileWriteStr, PathChild};
+    use std::collections::HashSet;
 
-    use crate::file_system::get_config_from_file;
+    use ahash::RandomState;
+    use assert_fs::fixture::{FileWriteStr, PathChild};
+    use url::Host;
+
+    use crate::file_system::{get_config_from_file, get_custom_blocked_names};
 
     #[test]
     fn get_config_from_file_successfully_parses_valid_file() {
@@ -276,5 +279,44 @@ domain_blocklist_urls = [
             ))
         );
         assert!(chain.next().is_none());
+    }
+
+    #[test]
+    fn get_custom_blocked_names_returns_expected_name_for_valid_input() {
+        let config_content = r"example.com
+# ignored-example.com
+another.example.com
+";
+        let temp_dir = assert_fs::TempDir::new().unwrap();
+        let _ = temp_dir
+            .child("blocked-names.txt")
+            .write_str(config_content);
+        let blocked_names_path = temp_dir.join("blocked-names.txt");
+        let hasher = RandomState::new();
+        let mut set: HashSet<Host, RandomState> = HashSet::with_hasher(hasher);
+
+        // act
+        get_custom_blocked_names(&blocked_names_path, &mut set);
+
+        // assert
+        assert_eq!(set.len(), 2);
+        let expected_host = Host::parse("example.com").unwrap();
+        assert!(set.contains(&expected_host));
+        let expected_host = Host::parse("another.example.com").unwrap();
+        assert!(set.contains(&expected_host));
+    }
+
+    #[test]
+    fn get_custom_blocked_names_does_not_modify_set_when_blocked_names_file_not_found() {
+        let temp_dir = assert_fs::TempDir::new().unwrap();
+        let blocked_names_path = temp_dir.join("does-not-exist.txt");
+        let hasher = RandomState::new();
+        let mut set: HashSet<Host, RandomState> = HashSet::with_hasher(hasher);
+
+        // act
+        get_custom_blocked_names(&blocked_names_path, &mut set);
+
+        // assert
+        assert!(set.is_empty());
     }
 }
