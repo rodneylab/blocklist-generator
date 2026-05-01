@@ -44,9 +44,9 @@ pub fn blocklist(
                         for parent_name in parent_domain_values {
                             if blocklist.remove(&parent_name) {
                                 log::info!(
-                                "Removed parent domain `{parent_name}` of allowed_names element: \
+                                    "Removed parent domain `{parent_name}` of allowed_names element: \
                                 `{name}` from generated blocklist."
-                            );
+                                );
                             }
                         }
                     }

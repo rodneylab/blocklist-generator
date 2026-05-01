@@ -13,7 +13,9 @@ coverage:
     cargo build
     C_COMPILER=$(brew --prefix llvm)/bin/clang RUSTFLAGS="-Cinstrument-coverage" \
         LLVM_PROFILE_FILE="blocklist_generator-%p-%m.profraw" cargo test
-    grcov . -s . --binary-path ./target/debug/ -t html --branch --ignore-not-existing \
+    grcov . -s . --binary-path ./target/debug/ \
+        --llvm-path $(brew --prefix llvm)/bin \
+        -t html --branch --ignore-not-existing \
         -o ./target/debug/coverage/
     open --reveal ./target/debug/coverage/index.html
     sed -i '' "s|href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css\"|href=\"file://`pwd`/.cache/bulma.min.css\"|g" ./target/debug/coverage/**/*.html

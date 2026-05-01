@@ -1,12 +1,12 @@
 use log::trace;
 use nom::{
+    IResult, Parser,
     branch::alt,
     bytes::complete::{tag, take_while_m_n},
     character::complete::{alphanumeric1, multispace1},
     combinator::{recognize, verify},
     multi::{many0_count, many1_count},
     sequence::pair,
-    IResult, Parser,
 };
 use url::Host;
 
@@ -82,21 +82,24 @@ pub fn domainlist(file_body: &str, set: &mut std::collections::HashSet<Host, aha
 
 pub fn hostfile(file_body: &str, set: &mut std::collections::HashSet<Host, ahash::RandomState>) {
     for line in file_body.lines() {
+        log::trace!("Parsing hostfile line: `{line}`");
         if let Some(value) = parse_hostfile_line(line) {
             if let Ok(host_value) = Host::parse(value) {
                 set.insert(host_value);
             } else {
                 trace!("Unable to parse hostname in line `{value}`");
             }
-        } else if !line.is_empty() && line.trim_start()[0..1] != *"#" {
-            trace!("Unable to parse `{line}`");
+        } else if line.trim_start().starts_with('#') {
+            log::trace!("Ignoring hostfile comment line: `{line}`");
+        } else if !line.trim().is_empty() {
+            log::warn!("Unable to parse hostfile line: `{line}`");
         }
     }
 }
 
 #[cfg(test)]
 mod tests {
-    use fake::{faker, Fake};
+    use fake::{Fake, faker};
     use proptest::{prop_assert_eq, proptest, strategy::Strategy};
     use url::Host;
 
