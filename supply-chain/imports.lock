@@ -167,6 +167,12 @@ user-id = 6825
 user-login = "sunfishcode"
 user-name = "Dan Gohman"
 
+[[publisher.glob]]
+version = "0.3.3"
+when = "2025-08-11"
+user-id = 55123
+user-login = "rust-lang-owner"
+
 [[publisher.globset]]
 version = "0.4.18"
 when = "2025-10-22"
@@ -241,37 +247,51 @@ user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
+[[publisher.icu_collections]]
+version = "2.2.0"
+when = "2026-04-01"
+user-id = 1139
+user-login = "Manishearth"
+user-name = "Manish Goregaokar"
+
 [[publisher.icu_locale_core]]
-version = "2.1.1"
-when = "2025-10-28"
+version = "2.2.0"
+when = "2026-04-01"
 user-id = 1139
 user-login = "Manishearth"
 user-name = "Manish Goregaokar"
 
 [[publisher.icu_normalizer]]
-version = "2.1.1"
-when = "2025-10-28"
+version = "2.2.0"
+when = "2026-04-01"
 user-id = 1139
 user-login = "Manishearth"
 user-name = "Manish Goregaokar"
 
 [[publisher.icu_normalizer_data]]
-version = "2.1.1"
-when = "2025-10-28"
+version = "2.2.0"
+when = "2026-04-01"
+user-id = 1139
+user-login = "Manishearth"
+user-name = "Manish Goregaokar"
+
+[[publisher.icu_properties]]
+version = "2.2.0"
+when = "2026-04-01"
 user-id = 1139
 user-login = "Manishearth"
 user-name = "Manish Goregaokar"
 
 [[publisher.icu_properties_data]]
-version = "2.0.0-beta2"
-when = "2025-02-26"
+version = "2.2.0"
+when = "2026-04-01"
 user-id = 1139
 user-login = "Manishearth"
 user-name = "Manish Goregaokar"
 
 [[publisher.icu_provider]]
-version = "2.1.1"
-when = "2025-10-28"
+version = "2.2.0"
+when = "2026-04-01"
 user-id = 1139
 user-login = "Manishearth"
 user-name = "Manish Goregaokar"
@@ -312,15 +332,15 @@ user-login = "dtolnay"
 user-name = "David Tolnay"
 
 [[publisher.jiff]]
-version = "0.2.23"
-when = "2026-03-03"
+version = "0.2.24"
+when = "2026-04-23"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.jiff-static]]
-version = "0.2.23"
-when = "2026-03-03"
+version = "0.2.24"
+when = "2026-04-23"
 user-id = 189
 user-login = "BurntSushi"
 user-name = "Andrew Gallant"
@@ -339,8 +359,8 @@ user-login = "cuviper"
 user-name = "Josh Stone"
 
 [[publisher.libc]]
-version = "0.2.185"
-when = "2026-04-13"
+version = "0.2.186"
+when = "2026-04-23"
 user-id = 55123
 user-login = "rust-lang-owner"
 
@@ -463,8 +483,8 @@ user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.reqwest]]
-version = "0.13.2"
-when = "2026-02-06"
+version = "0.13.3"
+when = "2026-04-27"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -553,22 +573,8 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.thiserror]]
-version = "1.0.69"
-when = "2024-11-10"
-user-id = 3618
-user-login = "dtolnay"
-user-name = "David Tolnay"
-
-[[publisher.thiserror]]
 version = "2.0.18"
 when = "2026-01-18"
-user-id = 3618
-user-login = "dtolnay"
-user-name = "David Tolnay"
-
-[[publisher.thiserror-impl]]
-version = "1.0.69"
-when = "2024-11-10"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
@@ -721,8 +727,8 @@ user-login = "alexcrichton"
 user-name = "Alex Crichton"
 
 [[publisher.wasip2]]
-version = "1.0.1+wasi-0.2.4"
-when = "2025-09-15"
+version = "1.0.3+wasi-0.2.9"
+when = "2026-04-17"
 user-id = 1
 user-login = "alexcrichton"
 user-name = "Alex Crichton"
@@ -751,22 +757,8 @@ when = "2026-01-06"
 trusted-publisher = "github:bytecodealliance/wasm-tools"
 
 [[publisher.windows-targets]]
-version = "0.42.2"
-when = "2023-03-13"
-user-id = 64539
-user-login = "kennykerr"
-user-name = "Kenny Kerr"
-
-[[publisher.windows-targets]]
 version = "0.52.6"
 when = "2024-07-03"
-user-id = 64539
-user-login = "kennykerr"
-user-name = "Kenny Kerr"
-
-[[publisher.windows_x86_64_msvc]]
-version = "0.42.2"
-when = "2023-03-13"
 user-id = 64539
 user-login = "kennykerr"
 user-name = "Kenny Kerr"
@@ -786,14 +778,13 @@ user-login = "epage"
 user-name = "Ed Page"
 
 [[publisher.wit-bindgen]]
-version = "0.43.0"
-when = "2025-06-24"
-user-id = 73222
-user-login = "wasmtime-publish"
-
-[[publisher.wit-bindgen]]
 version = "0.51.0"
 when = "2026-01-12"
+trusted-publisher = "github:bytecodealliance/wit-bindgen"
+
+[[publisher.wit-bindgen]]
+version = "0.57.1"
+when = "2026-04-17"
 trusted-publisher = "github:bytecodealliance/wit-bindgen"
 
 [[publisher.wit-bindgen-core]]
@@ -931,18 +922,6 @@ trusted-publisher = "github:bytecodealliance/wasm-tools"
 start = "2025-08-14"
 end = "2027-01-08"
 notes = "The Bytecode Alliance is the author of this crate"
-
-[[audits.bytecode-alliance.wildcard-audits.wit-bindgen]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-user-id = 73222 # wasmtime-publish
-start = "2023-01-01"
-end = "2026-06-03"
-notes = """
-The Bytecode Alliance uses the `wasmtime-publish` crates.io account to automate
-publication of this crate from CI. This repository requires all PRs are reviewed
-by a Bytecode Alliance maintainer and it owned by the Bytecode Alliance itself.
-"""
 
 [[audits.bytecode-alliance.wildcard-audits.wit-bindgen]]
 who = "Alex Crichton <alex@alexcrichton.com>"
@@ -1219,24 +1198,6 @@ criteria = "safe-to-deploy"
 version = "0.52.0"
 notes = "Procedural macros for accessing COM interfaces; necessarily `unsafe` but safety rationale is clearly documented."
 
-[[audits.bytecode-alliance.audits.wit-bindgen]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-delta = "0.43.0 -> 0.45.0"
-notes = "The Bytecode Alliance is the author of this crate"
-
-[[audits.bytecode-alliance.audits.wit-bindgen]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-delta = "0.45.0 -> 0.45.1"
-notes = "The Bytecode Alliance is the author of this crate"
-
-[[audits.bytecode-alliance.audits.wit-bindgen]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-delta = "0.45.1 -> 0.46.0"
-notes = "The Bytecode Alliance is the author of this crate"
-
 [[audits.bytecode-alliance.audits.zeroize]]
 who = "Pat Hickey <p.hickey@f5.com>"
 criteria = "safe-to-deploy"
@@ -1253,55 +1214,6 @@ who = "Johan Andersson <opensource@embark-studios.com>"
 criteria = "safe-to-deploy"
 version = "0.1.1"
 notes = "No unsafe usage or ambient capabilities"
-
-[[audits.embark-studios.audits.jni]]
-who = "Robert Bragg <opensource@embark-studios.com>"
-criteria = "safe-to-deploy"
-version = "0.21.1"
-notes = """
-Aims to provide a safe JNI (Java Native Interface) API over the
-unsafe `jni_sys` crate.
-
-This is a very general FFI abstraction for Java VMs with a lot of unsafe code
-throughout the API. There are almost certainly some edge cases with its design
-that could lead to unsound behaviour but it should still be considerably safer
-than working with JNI directly.
-
-A lot of the unsafe usage relates to quite-simple use of `from_raw` APIs to
-construct or cast wrapper types (around JNI pointers) which are fairly
-straight-forward to verify/trust in context.
-
-Some unsafe code has good `// # Safety` documentation (this has been enforced for
-newer code) but a lot of unsafe code doesn't document invariants that are
-being relied on.
-
-The design depends on non-trivial named lifetimes across many APIs to associate
-Java local references with JNI stack frames.
-
-The crate is not very actively maintained and was practically unmaintained for
-over a year before the 0.20 release.
-
-Robert Bragg who now works at Embark Studios became the maintainer of this
-crate in October 2022.
-
-In the process of working on the `jni` crate since becoming maintainer it's
-worth noting that I came across multiple APIs that I found needed to be
-re-worked to address safety issues, including ensuring that APIs that are not
-implemented safely are correctly declared as `unsafe`.
-
-There has been a focus on improving safety in the last two release.
-
-The jni crate has been used in production with the Signal messaging application
-for over two years:
-https://github.com/signalapp/libsignal/blob/main/rust/bridge/jni/Cargo.toml
-
-# Some Notable Open Issues
-- https://github.com/jni-rs/jni-rs/issues/422 - questions soundness of linking
-  multiple versions of jni crate into an application, considering the use
-  of (separately scoped) thread-local-storage to track thread attachments
-- https://github.com/jni-rs/jni-rs/issues/405 - discusses the ease with which
-  code may expose the JVM to invalid booleans with undefined behaviour
-"""
 
 [[audits.google.audits.android_system_properties]]
 who = "Manish Goregaokar <manishearth@google.com>"
@@ -1400,13 +1312,6 @@ who = "George Burgess IV <gbiv@google.com>"
 criteria = "safe-to-deploy"
 version = "1.0.3"
 aggregated-from = "https://chromium.googlesource.com/chromiumos/third_party/rust_crates/+/refs/heads/main/cargo-vet/audits.toml?format=TEXT"
-
-[[audits.google.audits.icu_properties]]
-who = "Manish Goregaokar <manishearth@google.com>"
-criteria = "safe-to-deploy"
-version = "2.0.0-beta2"
-notes = "All unsafe was removed"
-aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
 
 [[audits.google.audits.predicates-core]]
 who = "Max Lee <endlesspring@google.com>"
@@ -1752,37 +1657,6 @@ aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-ch
 who = "Erich Gubler <erichdongubler@gmail.com>"
 criteria = "safe-to-deploy"
 delta = "0.10.0 -> 0.11.0"
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.icu_collections]]
-who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
-criteria = "safe-to-deploy"
-delta = "2.0.0 -> 2.1.1"
-notes = "Adding methods have unsafe code for faster, but these have the commnet why this is safe."
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.icu_properties]]
-who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
-criteria = "safe-to-deploy"
-delta = "2.0.0-beta2 -> 2.0.1"
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.icu_properties]]
-who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
-criteria = "safe-to-deploy"
-delta = "2.0.1 -> 2.1.2"
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.icu_properties_data]]
-who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
-criteria = "safe-to-deploy"
-delta = "2.0.0-beta2 -> 2.0.1"
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.icu_properties_data]]
-who = "Makoto Kato <m_kato@ga2.so-net.ne.jp>"
-criteria = "safe-to-deploy"
-delta = "2.0.1 -> 2.1.2"
 aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
 
 [[audits.mozilla.audits.idna]]

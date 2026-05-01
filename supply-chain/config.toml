@@ -19,14 +19,6 @@ url = "https://raw.githubusercontent.com/divviup/libprio-rs/main/supply-chain/au
 [imports.mozilla]
 url = "https://raw.githubusercontent.com/mozilla/supply-chain/main/audits.toml"
 
-[[exemptions.askama_derive]]
-version = "0.15.6"
-criteria = "safe-to-deploy"
-
-[[exemptions.askama_macros]]
-version = "0.15.6"
-criteria = "safe-to-deploy"
-
 [[exemptions.aws-lc-rs]]
 version = "1.16.3"
 criteria = "safe-to-deploy"
@@ -37,10 +29,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.backtrace-ext]]
 version = "0.2.1"
-criteria = "safe-to-deploy"
-
-[[exemptions.cesu8]]
-version = "1.1.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.combine]]
@@ -107,8 +95,12 @@ criteria = "safe-to-deploy"
 version = "0.7.12"
 criteria = "safe-to-deploy"
 
-[[exemptions.jni-sys]]
-version = "0.3.1"
+[[exemptions.jni]]
+version = "0.22.4"
+criteria = "safe-to-deploy"
+
+[[exemptions.jni-macros]]
+version = "0.22.4"
 criteria = "safe-to-deploy"
 
 [[exemptions.jni-sys]]
@@ -117,10 +109,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.jni-sys-macros]]
 version = "0.4.1"
-criteria = "safe-to-deploy"
-
-[[exemptions.js-sys]]
-version = "0.3.95"
 criteria = "safe-to-deploy"
 
 [[exemptions.libsqlite3-sys]]
@@ -192,7 +180,7 @@ version = "0.8.3"
 criteria = "safe-to-deploy"
 
 [[exemptions.rustls-platform-verifier]]
-version = "0.6.2"
+version = "0.7.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.rustls-platform-verifier-android]]
@@ -201,6 +189,14 @@ criteria = "safe-to-deploy"
 
 [[exemptions.security-framework]]
 version = "3.7.0"
+criteria = "safe-to-deploy"
+
+[[exemptions.simd_cesu8]]
+version = "1.1.1"
+criteria = "safe-to-deploy"
+
+[[exemptions.simdutf8]]
+version = "0.1.5"
 criteria = "safe-to-deploy"
 
 [[exemptions.sqlite-wasm-rs]]
@@ -232,15 +228,11 @@ version = "0.1.36"
 criteria = "safe-to-deploy"
 
 [[exemptions.wasm-bindgen]]
-version = "0.2.118"
+version = "0.2.120"
 criteria = "safe-to-deploy"
 
 [[exemptions.wasm-bindgen-macro-support]]
-version = "0.2.118"
-criteria = "safe-to-deploy"
-
-[[exemptions.web-sys]]
-version = "0.3.95"
+version = "0.2.120"
 criteria = "safe-to-deploy"
 
 [[exemptions.web-time]]
@@ -261,10 +253,6 @@ criteria = "safe-to-deploy"
 
 [[exemptions.windows-strings]]
 version = "0.5.1"
-criteria = "safe-to-deploy"
-
-[[exemptions.windows-sys]]
-version = "0.45.0"
 criteria = "safe-to-deploy"
 
 [[exemptions.windows-sys]]

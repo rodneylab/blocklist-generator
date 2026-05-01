@@ -5,8 +5,8 @@ authors = ["Rodney Johnson <ask@rodneylab.com>"]
 edition = "2024"
 license = "BSD-3-Clause"
 repository = "https://github.com/rodneylab/blocklist-generator"
-# Rust 2025 requires 1.85
-rust-version = "1.85"
+# askama 0.16.0 requires 1.88
+rust-version = "1.88"
 description = "CLI utility for generating blocklist.rpz files for use with firewalls"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -14,7 +14,7 @@ description = "CLI utility for generating blocklist.rpz files for use with firew
 [dependencies]
 ahash = "0.8.12"
 anyhow = "1.0.102"
-askama = "0.15.6"
+askama = "0.16.0"
 clap = { version = "4.6.1", features = ["derive"] }
 clap-verbosity-flag = "3.0.4"
 env_logger = "0.11.10"
@@ -25,7 +25,7 @@ log = "0.4.29"
 miette = { version = "7.6.0", features = ["fancy"] }
 nom = "8.0.0"
 num-format = "0.4.4"
-reqwest = "0.13.2"
+reqwest = "0.13.3"
 rusqlite = { version = "0.39.0", features = ["bundled", "chrono", "serde_json", "url", "uuid"] }
 serde = { version = "1.0.228", features = ["derive"] }
 thiserror = "2.0.18"
