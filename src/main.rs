@@ -1,5 +1,6 @@
 #![warn(clippy::all, clippy::pedantic)]
 
+mod cli;
 mod fetch;
 mod file_system;
 mod filter;
@@ -15,27 +16,13 @@ use num_format::{Locale, ToFormattedString};
 use url::Host;
 
 use crate::{
+    cli::Cli,
     fetch::Client as FetchClient,
     file_system::{
         Blocklists, Config, get_config_from_file, get_custom_blocked_names,
         write_blocklist_rpz_file, write_domain_blocklist_file, write_unbound_local_zone_file,
     },
 };
-
-#[derive(Parser)]
-#[clap(author,version,about,long_about=None)]
-struct Cli {
-    #[clap(flatten)]
-    verbose: clap_verbosity_flag::Verbosity,
-
-    /// Config file path (default: ./blocklist-generator.toml)
-    #[clap(short, long, value_parser)]
-    config: Option<PathBuf>,
-
-    /// (default: 3)
-    #[clap(short, long, value_parser)]
-    max_concurrent_downloads: Option<u32>,
-}
 
 #[derive(Debug)]
 enum SourceType {
@@ -75,9 +62,13 @@ fn sources_from_blocklists(blocklists: &Blocklists) -> Vec<Source<'_>> {
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let cli = &Cli::parse();
-    env_logger::Builder::new()
-        .filter_level(cli.verbose.log_level_filter())
-        .init();
+    cli.initialise_logging();
+
+    if cli.markdown_help {
+        clap_markdown::print_help_markdown::<Cli>();
+
+        return Ok(());
+    }
 
     let default_config_path = PathBuf::from("blocklist-generator.toml");
     let config_path = match &cli.config {
