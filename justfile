@@ -32,6 +32,10 @@ doc crate:
 insta-snapshot-review:
     cargo insta review
 
+# generate CLI markdown docs
+markdown-docs:
+    cargo run -- --markdown-help > docs/index.md
+
 # copy URL for Rust std docs to clipboard
 std:
     @rustup doc --std --path | pbcopy
