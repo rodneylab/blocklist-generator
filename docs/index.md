@@ -27,4 +27,3 @@ CLI utility for generating blocklist.rpz files for use with firewalls
     This document was generated automatically by
     <a href="https://crates.io/crates/clap-markdown"><code>clap-markdown</code></a>.
 </i></small>
-
