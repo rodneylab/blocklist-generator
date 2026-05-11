@@ -1,0 +1,4 @@
+ignore_patterns:
+  - "CODE_OF_CONDUCT.md"
+  - "supply-chain/**"
+  - "rusty-tags.vi"
