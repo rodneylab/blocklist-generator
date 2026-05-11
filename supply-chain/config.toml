@@ -95,10 +95,6 @@ criteria = "safe-to-deploy"
 version = "0.1.65"
 criteria = "safe-to-deploy"
 
-[[exemptions.iri-string]]
-version = "0.7.12"
-criteria = "safe-to-deploy"
-
 [[exemptions.jni]]
 version = "0.22.4"
 criteria = "safe-to-deploy"
@@ -223,20 +219,12 @@ criteria = "safe-to-deploy"
 version = "0.7.0"
 criteria = "safe-to-deploy"
 
-[[exemptions.tokio]]
-version = "1.52.1"
-criteria = "safe-to-deploy"
-
 [[exemptions.tracing-core]]
 version = "0.1.36"
 criteria = "safe-to-deploy"
 
-[[exemptions.wasm-bindgen]]
-version = "0.2.120"
-criteria = "safe-to-deploy"
-
 [[exemptions.wasm-bindgen-macro-support]]
-version = "0.2.120"
+version = "0.2.121"
 criteria = "safe-to-deploy"
 
 [[exemptions.web-time]]

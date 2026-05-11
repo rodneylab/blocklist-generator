@@ -294,6 +294,11 @@ version = "1.2.61"
 [[audits.cc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
+version = "1.2.62"
+
+[[audits.cc]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
 delta = "1.0.97 -> 1.0.98"
 
 [[audits.cc]]
@@ -730,6 +735,11 @@ version = "0.3.82"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.97"
+
+[[audits.js-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.98"
 
 [[audits.libc]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1712,6 +1722,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.105"
 
+[[audits.wasm-bindgen]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.121"
+
 [[audits.wasm-bindgen-futures]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1736,6 +1751,11 @@ version = "0.4.68"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.4.70"
+
+[[audits.wasm-bindgen-futures]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.4.71"
 
 [[audits.wasm-bindgen-macro]]
 who = "Rodney Lab <codesign@rodneylab.com>"
@@ -1762,6 +1782,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.120"
 
+[[audits.wasm-bindgen-macro]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.121"
+
 [[audits.wasm-bindgen-macro-support]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1787,6 +1812,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.2.120"
 
+[[audits.wasm-bindgen-shared]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.2.121"
+
 [[audits.web-sys]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -1806,6 +1836,11 @@ version = "0.3.82"
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "0.3.97"
+
+[[audits.web-sys]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "0.3.98"
 
 [[audits.webpki-root-certs]]
 who = "Rodney Lab <codesign@rodneylab.com>"

@@ -181,8 +181,8 @@ user-login = "BurntSushi"
 user-name = "Andrew Gallant"
 
 [[publisher.h2]]
-version = "0.4.13"
-when = "2026-01-05"
+version = "0.4.14"
+when = "2026-05-04"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
@@ -200,8 +200,8 @@ user-id = 55123
 user-login = "rust-lang-owner"
 
 [[publisher.hashbrown]]
-version = "0.17.0"
-when = "2026-04-09"
+version = "0.17.1"
+when = "2026-05-09"
 user-id = 55123
 user-login = "rust-lang-owner"
 
@@ -593,6 +593,13 @@ user-id = 1139
 user-login = "Manishearth"
 user-name = "Manish Goregaokar"
 
+[[publisher.tokio]]
+version = "1.52.3"
+when = "2026-05-08"
+user-id = 6741
+user-login = "Darksonn"
+user-name = "Alice Ryhl"
+
 [[publisher.tokio-macros]]
 version = "2.7.0"
 when = "2026-04-03"
@@ -643,8 +650,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.tower-http]]
-version = "0.6.8"
-when = "2025-12-08"
+version = "0.6.10"
+when = "2026-05-06"
 user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
