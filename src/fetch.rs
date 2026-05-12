@@ -37,9 +37,6 @@ pub enum AppError {
         "Error fetching blocklist `{url}`.  Check the URL is correct and the connection is up."
     )]
     Fetch { url: String },
-
-    #[error(transparent)]
-    Database(#[from] rusqlite::Error),
 }
 
 pub struct Client {
@@ -165,14 +162,13 @@ impl Client {
 mod tests {
     use std::collections::HashSet;
 
+    use crate::{Source, SourceType, fetch::Client};
     use ahash::RandomState;
     use url::Host;
     use wiremock::{
         Mock, MockServer, ResponseTemplate,
         matchers::{method, path},
     };
-
-    use crate::{Source, SourceType, fetch::Client};
 
     #[tokio::test]
     async fn domainlist_contacts_remote_server() {
