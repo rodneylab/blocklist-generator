@@ -194,12 +194,6 @@ user-id = 55123
 user-login = "rust-lang-owner"
 
 [[publisher.hashbrown]]
-version = "0.16.1"
-when = "2025-11-20"
-user-id = 55123
-user-login = "rust-lang-owner"
-
-[[publisher.hashbrown]]
 version = "0.17.1"
 when = "2026-05-09"
 user-id = 55123
@@ -1036,16 +1030,6 @@ who = "Nick Fitzgerald <fitzgen@gmail.com>"
 criteria = "safe-to-deploy"
 delta = "0.2.4 -> 0.2.5"
 
-[[audits.bytecode-alliance.audits.fallible-iterator]]
-who = "Alex Crichton <alex@alexcrichton.com>"
-criteria = "safe-to-deploy"
-delta = "0.2.0 -> 0.3.0"
-notes = """
-This major version update has a few minor breaking changes but everything
-this crate has to do with iterators and `Result` and such. No `unsafe` or
-anything like that, all looks good.
-"""
-
 [[audits.bytecode-alliance.audits.foldhash]]
 who = "Alex Crichton <alex@alexcrichton.com>"
 criteria = "safe-to-deploy"
@@ -1084,11 +1068,6 @@ who = "Alex Crichton <alex@alexcrichton.com>"
 criteria = "safe-to-deploy"
 delta = "0.4.1 -> 0.5.0"
 notes = "Minor changes for a `no_std` upgrade but otherwise everything looks as expected."
-
-[[audits.bytecode-alliance.audits.iana-time-zone-haiku]]
-who = "Dan Gohman <dev@sunfishcode.online>"
-criteria = "safe-to-deploy"
-version = "0.1.2"
 
 [[audits.bytecode-alliance.audits.leb128fmt]]
 who = "Alex Crichton <alex@alexcrichton.com>"
@@ -1145,12 +1124,6 @@ Crate is sound, albeit leaky, and not actively malicious. Probably not the best
 crate to use in practice but it's suitable for testing dependencies.
 """
 
-[[audits.bytecode-alliance.audits.vcpkg]]
-who = "Pat Hickey <phickey@fastly.com>"
-criteria = "safe-to-deploy"
-version = "0.2.15"
-notes = "no build.rs, no macros, no unsafe. It reads the filesystem and makes copies of DLLs into OUT_DIR."
-
 [[audits.bytecode-alliance.audits.wasm-metadata]]
 who = "Alex Crichton <alex@alexcrichton.com>"
 criteria = "safe-to-deploy"
@@ -1199,12 +1172,6 @@ criteria = "safe-to-deploy"
 delta = "0.243.0 -> 0.244.0"
 notes = "The Bytecode Alliance is the author of this crate"
 
-[[audits.bytecode-alliance.audits.windows-implement]]
-who = "Andrew Brown <andrew.brown@intel.com>"
-criteria = "safe-to-deploy"
-version = "0.52.0"
-notes = "Procedural macros for accessing COM interfaces; necessarily `unsafe` but safety rationale is clearly documented."
-
 [[audits.bytecode-alliance.audits.zeroize]]
 who = "Pat Hickey <p.hickey@f5.com>"
 criteria = "safe-to-deploy"
@@ -1221,13 +1188,6 @@ who = "Johan Andersson <opensource@embark-studios.com>"
 criteria = "safe-to-deploy"
 version = "0.1.1"
 notes = "No unsafe usage or ambient capabilities"
-
-[[audits.google.audits.android_system_properties]]
-who = "Manish Goregaokar <manishearth@google.com>"
-criteria = "safe-to-deploy"
-version = "0.1.5"
-notes = "Android system API FFI"
-aggregated-from = "https://chromium.googlesource.com/chromium/src/+/main/third_party/rust/chromium_crates_io/supply-chain/audits.toml?format=TEXT"
 
 [[audits.google.audits.bit-set]]
 who = "George Burgess IV <gbiv@google.com>"
@@ -1617,12 +1577,6 @@ version = "1.0.7"
 notes = "Simple hasher implementation with no unsafe code."
 aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
 
-[[audits.mozilla.audits.foldhash]]
-who = "Erich Gubler <erichdongubler@gmail.com>"
-criteria = "safe-to-deploy"
-delta = "0.1.5 -> 0.2.0"
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
 [[audits.mozilla.audits.form_urlencoded]]
 who = "Valentin Gosu <valentin.gosu@gmail.com>"
 criteria = "safe-to-deploy"
@@ -1639,31 +1593,6 @@ aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-ch
 who = "edgul <ed.guloien@gmail.com>"
 criteria = "safe-to-deploy"
 delta = "1.2.1 -> 1.2.2"
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.hashlink]]
-who = "Mike Hommey <mh+mozilla@glandium.org>"
-criteria = "safe-to-deploy"
-delta = "0.7.0 -> 0.8.1"
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.hashlink]]
-who = "Mark Hammond <mhammond@mozilla.com>"
-criteria = "safe-to-deploy"
-delta = "0.8.1 -> 0.9.1"
-notes = "New CursorMut struct and other relatively straight-forward changes."
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.hashlink]]
-who = "Erich Gubler <erichdongubler@gmail.com>"
-criteria = "safe-to-deploy"
-delta = "0.9.1 -> 0.10.0"
-aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
-
-[[audits.mozilla.audits.hashlink]]
-who = "Erich Gubler <erichdongubler@gmail.com>"
-criteria = "safe-to-deploy"
-delta = "0.10.0 -> 0.11.0"
 aggregated-from = "https://hg.mozilla.org/mozilla-central/raw-file/tip/supply-chain/audits.toml"
 
 [[audits.mozilla.audits.idna]]

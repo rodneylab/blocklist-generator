@@ -27,7 +27,6 @@ miette = { version = "7.6.0", features = ["fancy"] }
 nom = "8.0.0"
 num-format = "0.4.4"
 reqwest = "0.13.3"
-rusqlite = { version = "0.39.0", features = ["bundled", "chrono", "serde_json", "url", "uuid"] }
 serde = { version = "1.0.228", features = ["derive"] }
 thiserror = "2.0.18"
 tokio = { version = "1.52.3", features = ["macros", "rt-multi-thread"] }
