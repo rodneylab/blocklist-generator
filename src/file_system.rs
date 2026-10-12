@@ -223,7 +223,7 @@ allowed_names = [
             chain.next().map(|val| format!("{val}")),
             Some(format!(
                 "Failed to open or read config file `{}`",
-                &config_path.display()
+                config_path.display()
             ))
         );
         assert_eq!(
@@ -275,7 +275,7 @@ domain_blocklist_urls = [
             chain.next().map(|val| format!("{val}")),
             Some(format!(
                 "Failed to parse config file `{}`.  Check it is valid.",
-                &config_path.display()
+                config_path.display()
             ))
         );
         assert!(chain.next().is_none());
