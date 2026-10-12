@@ -19,7 +19,7 @@ CLI utility for generating blocklist.rpz files for use with firewalls
 - `-v`, `--verbose` — Increase logging verbosity
 - `-q`, `--quiet` — Decrease logging verbosity
 
-<hr/>
+<hr />
 
 <small><i>
 This document was generated automatically by
