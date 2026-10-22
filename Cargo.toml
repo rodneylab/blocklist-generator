@@ -28,7 +28,7 @@ num-format = "0.4.4"
 reqwest = "0.13.5"
 serde = { version = "1.0.229", features = ["derive"] }
 thiserror = "2.0.21"
-tokio = { version = "1.53.2", features = ["macros", "rt-multi-thread"] }
+tokio = { version = "1.54.0", features = ["macros", "rt-multi-thread"] }
 toml = { version = "1.1.8", features = ["parse", "serde", "std"] }
 url = "2.5.8"
 
@@ -38,3 +38,39 @@ fake = "5.1.0"
 insta = { version = "1.49.0", features = ["glob", "json"] }
 proptest = "1.12.0"
 wiremock = "0.6.5"
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+allow_attributes = "deny"
+dbg_macro = "deny"
+# print_stdout = "deny"
+clone_on_ref_ptr = "deny"
+empty_drop = "deny"
+exit = "deny"
+filetype_is_file = "deny"
+get_unwrap = "deny"
+rc_buffer = "deny"
+rc_mutex = "deny"
+rest_pat_in_fully_bound_structs = "deny"
+unnecessary_safety_comment = "deny"
+debug_assert_with_mut_call = "warn"
+iter_on_single_items = "warn"
+needless_pass_by_ref_mut = "warn"
+redundant_clone = "warn"
+redundant_pub_crate = "warn"
+significant_drop_in_scrutinee = "warn"
+unused_peekable = "warn"
+
+[profile.dev]
+debug = "line-tables-only"
+split-debuginfo = "unpacked"
+
+[profile.dev.package."*"]
+debug = false
+
+# Faster snapshot runs
+# See: https://docs.rs/insta/latest/insta/#optional-faster-runs
+[profile.dev.package.insta]
+opt-level = 3
+[profile.dev.package.similar]
+opt-level = 3
