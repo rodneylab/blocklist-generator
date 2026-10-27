@@ -264,6 +264,55 @@ user-id = 359
 user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
+[[publisher.icu_collections]]
+version = "2.4.0"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
+
+[[publisher.icu_locale_core]]
+version = "2.4.0"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
+
+[[publisher.icu_normalizer]]
+version = "2.4.0"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
+
+[[publisher.icu_normalizer_data]]
+version = "2.4.0"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
+
+[[publisher.icu_properties]]
+version = "2.4.0"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
+
+[[publisher.icu_properties_data]]
+version = "2.4.0"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
+
+[[publisher.icu_provider]]
+version = "2.4.0"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
+
 [[publisher.ignore]]
 version = "0.4.33"
 when = "2026-08-04"
@@ -387,6 +436,13 @@ user-id = 6743
 user-login = "epage"
 user-name = "Ed Page"
 
+[[publisher.openssl-probe]]
+version = "0.2.2"
+when = "2026-10-26"
+user-id = 4556
+user-login = "djc"
+user-name = "Dirkjan Ochtman"
+
 [[publisher.predicates]]
 version = "3.0.4"
 when = "2023-09-18"
@@ -437,8 +493,8 @@ user-login = "seanmonstar"
 user-name = "Sean McArthur"
 
 [[publisher.rustix]]
-version = "1.1.5"
-when = "2026-09-16"
+version = "1.1.6"
+when = "2026-10-27"
 user-id = 6825
 user-login = "sunfishcode"
 user-name = "Dan Gohman"
@@ -554,6 +610,13 @@ when = "2026-09-23"
 user-id = 3618
 user-login = "dtolnay"
 user-name = "David Tolnay"
+
+[[publisher.tinystr]]
+version = "0.8.5"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
 
 [[publisher.tokio]]
 version = "1.54.1"
@@ -688,6 +751,13 @@ user-id = 1
 user-login = "alexcrichton"
 user-name = "Alex Crichton"
 
+[[publisher.webpki-root-certs]]
+version = "1.0.11"
+when = "2026-10-23"
+user-id = 2751
+user-login = "ctz"
+user-name = "Joe Birr-Pixton"
+
 [[publisher.windows-targets]]
 version = "0.52.6"
 when = "2024-07-03"
@@ -715,18 +785,25 @@ when = "2026-04-17"
 trusted-publisher = "github:bytecodealliance/wit-bindgen"
 
 [[publisher.yoke]]
-version = "0.8.3"
-when = "2026-06-03"
-user-id = 1139
-user-login = "Manishearth"
-user-name = "Manish Goregaokar"
+version = "0.8.4"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
 
 [[publisher.zerovec]]
-version = "0.11.8"
-when = "2026-08-19"
-user-id = 1139
-user-login = "Manishearth"
-user-name = "Manish Goregaokar"
+version = "0.11.9"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
+
+[[publisher.zerovec-derive]]
+version = "0.11.7"
+when = "2026-10-22"
+user-id = 166196
+user-login = "robertbastian"
+user-name = "Robert Bastian"
 
 [[publisher.zmij]]
 version = "1.0.23"

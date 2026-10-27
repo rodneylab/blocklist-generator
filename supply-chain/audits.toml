@@ -1712,6 +1712,11 @@ who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
 version = "1.15.1"
 
+[[audits.smallvec]]
+who = "Rodney Lab <codesign@rodneylab.com>"
+criteria = "safe-to-deploy"
+version = "1.16.4"
+
 [[audits.stringprep]]
 who = "Rodney Lab <codesign@rodneylab.com>"
 criteria = "safe-to-deploy"
@@ -2728,11 +2733,23 @@ user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2022-09-27"
 end = "2027-05-01"
 
+[[trusted.icu_collections]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-01-26"
+end = "2027-10-27"
+
 [[trusted.icu_locale_core]]
 criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2025-02-26"
 end = "2026-11-14"
+
+[[trusted.icu_locale_core]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2025-05-07"
+end = "2027-10-27"
 
 [[trusted.icu_normalizer]]
 criteria = "safe-to-deploy"
@@ -2740,11 +2757,23 @@ user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2021-04-29"
 end = "2026-11-14"
 
+[[trusted.icu_normalizer]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-01-26"
+end = "2027-10-27"
+
 [[trusted.icu_normalizer_data]]
 criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2023-10-03"
 end = "2026-11-14"
+
+[[trusted.icu_normalizer_data]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-11-16"
+end = "2027-10-27"
 
 [[trusted.icu_properties]]
 criteria = "safe-to-deploy"
@@ -2752,17 +2781,35 @@ user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2022-01-31"
 end = "2026-11-14"
 
+[[trusted.icu_properties]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-01-26"
+end = "2027-10-27"
+
 [[trusted.icu_properties_data]]
 criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2023-10-03"
 end = "2026-11-14"
 
+[[trusted.icu_properties_data]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-11-16"
+end = "2027-10-27"
+
 [[trusted.icu_provider]]
 criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2022-01-31"
 end = "2026-11-14"
+
+[[trusted.icu_provider]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2022-10-08"
+end = "2027-10-27"
 
 [[trusted.id-arena]]
 criteria = "safe-to-deploy"
@@ -2925,6 +2972,12 @@ criteria = "safe-to-deploy"
 user-id = 1 # Alex Crichton (alexcrichton)
 start = "2020-08-04"
 end = "2026-01-29"
+
+[[trusted.openssl-probe]]
+criteria = "safe-to-deploy"
+user-id = 4556 # Dirkjan Ochtman (djc)
+start = "2025-12-29"
+end = "2027-10-27"
 
 [[trusted.parking_lot]]
 criteria = "safe-to-deploy"
@@ -3136,6 +3189,12 @@ user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2021-01-14"
 end = "2026-11-14"
 
+[[trusted.tinystr]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-01-26"
+end = "2027-10-27"
+
 [[trusted.tokio]]
 criteria = "safe-to-deploy"
 user-id = 10
@@ -3310,6 +3369,12 @@ user-id = 1 # Alex Crichton (alexcrichton)
 start = "2019-03-04"
 end = "2025-06-01"
 
+[[trusted.webpki-root-certs]]
+criteria = "safe-to-deploy"
+user-id = 2751 # Joe Birr-Pixton (ctz)
+start = "2024-11-21"
+end = "2027-10-27"
+
 [[trusted.windows-targets]]
 criteria = "safe-to-deploy"
 user-id = 64539 # Kenny Kerr (kennykerr)
@@ -3339,6 +3404,12 @@ criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2021-05-01"
 end = "2026-11-14"
+
+[[trusted.yoke]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-01-26"
+end = "2027-10-27"
 
 [[trusted.yoke-derive]]
 criteria = "safe-to-deploy"
@@ -3370,11 +3441,23 @@ user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2021-04-19"
 end = "2026-11-15"
 
+[[trusted.zerovec]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-01-26"
+end = "2027-10-27"
+
 [[trusted.zerovec-derive]]
 criteria = "safe-to-deploy"
 user-id = 1139 # Manish Goregaokar (Manishearth)
 start = "2021-12-11"
 end = "2026-11-14"
+
+[[trusted.zerovec-derive]]
+criteria = "safe-to-deploy"
+user-id = 166196 # Robert Bastian (robertbastian)
+start = "2023-01-26"
+end = "2027-10-27"
 
 [[trusted.zmij]]
 criteria = "safe-to-deploy"
